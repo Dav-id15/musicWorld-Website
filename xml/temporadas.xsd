@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="temporadas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="temporada" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="estado" type="xs:string" />
+                            <xs:element name="equipos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="equipo" minOccurs="6" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="nombre" type="xs:string" />
+                                                    <xs:element name="entrenador" type="xs:string" />
+                                                    <xs:element name="estadio" type="xs:string" />
+                                                    <xs:element name="puntos" type="xs:integer" />
+                                                    <xs:element name="partidosJugados" type="xs:integer" />
+                                                    <xs:element name="partidosGanados" type="xs:integer" />
+                                                    <xs:element name="partidosPerdidos" type="xs:integer" />
+                                                    <xs:element name="puntosFavor" type="xs:integer" />
+                                                    <xs:element name="puntosContra" type="xs:integer" />
+                                                    <xs:element name="diferenciaPuntos" type="xs:integer" />
+                                                    <xs:element name="jugadores">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="jugador" minOccurs="5" maxOccurs="14">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="nombre" type="xs:string" />
+                                                                            <xs:element name="apellidos" type="xs:string" />
+                                                                            <xs:element name="dorsal" type="xs:integer" />
+                                                                            <xs:element name="posicion" type="xs:string" />
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="jornadas">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="jornada" minOccurs="0" maxOccurs="20">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="numero" type="xs:integer" />
+                                                    <xs:element name="partidos">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="partido" minOccurs="1" maxOccurs="5">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="fecha" type="xs:string" />
+                                                                            <xs:element name="hora" type="xs:string" />
+                                                                            <xs:element name="equipo1" type="xs:string" />
+                                                                            <xs:element name="equipo2" type="xs:string" />
+                                                                            <xs:element name="resultado" type="xs:string" />
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

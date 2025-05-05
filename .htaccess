@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# Redirigir "index.php" a la raíz del sitio
+RewriteCond %{THE_REQUEST} /index.php [NC]
+RewriteRule ^index.php$ / [L,R=301]
+
+# Redirigir "index.html" a la raíz del sitio
+RewriteCond %{THE_REQUEST} /index.html [NC]
+RewriteRule ^index.html$ / [L,R=301]
+
+# Eliminar la extensión .php en las URLs
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^/]+)/?$ $1.php [L]
+
+# Eliminar la extensión .html en las URLs
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
