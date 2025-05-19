@@ -63,7 +63,7 @@ header {
 }
 
 #navegador ul a:hover {
-	color: #64cfff;
+	color: #26beff;
 }
 
 #navegador ul a.active {
@@ -98,7 +98,7 @@ header {
 }
 
 .login-button:hover {
-    background-color: #73d4ff;
+    background-color: #5786C3;
 }
 
 .login-button a {
@@ -1072,7 +1072,7 @@ footer {
 }
 
 .new-user-button {
-    background-color: #73d4ff;
+    background-color: #13427E;
     border-radius: 0.5em;
     padding: 0.5em 1em;
     box-shadow: none;
@@ -1084,7 +1084,7 @@ footer {
 }
 
 .new-user-button:hover {
-    background-color: #df5d16;
+    background-color: #5786C3;
 }
 
 .new-user-button a {

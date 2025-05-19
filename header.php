@@ -109,7 +109,7 @@ $current_page = basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 		<div class="header-movil">
 			<div id="logonav">
 				<a href="/">
-					<img id="logo" src="img/logo200x200.png" alt="Logo">
+					<img id="logo" src="img/LogoMusicWorld.png" alt="Logo">
 					<img src="img/lpb.png" alt="logo">
 				</a>
 				<i class="fa fa-bars menu-icon" id="menu-icon"></i>
