@@ -3,35 +3,35 @@
   <usuario>
     <nombre>Juan</nombre>
     <apellidos>Mart&#xED;nez</apellidos>
-    <email>juan.martinez@gmail.com</email>
+    <userName>juan</userName>
     <contraseña>$2y$10$RS948eEsQGTyZ5DHlPeVPuw6uapL6BOtOO41gdnsqjzN7BC2zQCvq</contraseña>
     <rol>Administrador</rol>
   </usuario>
   <usuario>
     <nombre>test</nombre>
     <apellidos>test</apellidos>
-    <email>test@test.com</email>
+    <userName>test@test.com</userName>
     <contraseña>$2y$10$KaBEdGnYus9YPF5eeCKrpOc3R.SGxT15wBWMkUwAvG6e8FG3mHKxi</contraseña>
     <rol>Entrenador</rol>
   </usuario>
   <usuario>
     <nombre>admin</nombre>
     <apellidos/>
-    <email>admin@lpb.com</email>
+    <userName>admin</userName>
     <contraseña>$2y$10$I4dqanWvK/rmDnOcUsKuD.OW17SAD4r5Ij4JwQzAh2I1s44bYywbe</contraseña>
     <rol>Administrador</rol>
   </usuario>
   <usuario>
     <nombre>Billy</nombre>
     <apellidos>Donovan</apellidos>
-    <email>billy.donovan@gmail.com</email>
+    <userName>billy</userName>
     <contraseña>$2y$10$AUWPKZb8UzJ8AW/fCqjJDOv4F2DxSz3GjP69sePKp6C.R/Kucf8yu</contraseña>
     <rol>Entrenador</rol>
   </usuario>
   <usuario>
     <nombre>Manuel</nombre>
     <apellidos>G&#xF3;mez</apellidos>
-    <email>manual.gomez@gmail.com</email>
+    <userName>manual</userName>
     <contraseña>$2y$10$zWKkOZvywdMQExiCBryo8.jqCbuGCXd5rDvB/7966WqDu17K2F6sO</contraseña>
     <rol>&#xC1;rbitro</rol>
   </usuario>

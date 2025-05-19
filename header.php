@@ -51,7 +51,7 @@ $current_page = basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 	<link rel="shortcut icon" href="img/basketball.png" type="image/x-icon">
 </head>
 
-<body login="<?= isset($_SESSION['email']) ? 'true' : 'false'; ?>">
+<body login="<?= isset($_SESSION['userName']) ? 'true' : 'false'; ?>">
 	<header>
 		<div class="header-pc">
 			<div id="logonav"><a href="./"><img id="logo" src="img/logo200x200.png" alt="Logo"></a></div>
@@ -88,7 +88,7 @@ $current_page = basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 				</select>
 			</div>
 			<div>
-				<?php if (isset($_SESSION["usuario"]["email"])) : ?>
+				<?php if (isset($_SESSION["usuario"]["userName"])) : ?>
 					<div class="dropdown">
 						<span class="welcome-msg"><?= htmlspecialchars($_SESSION["usuario"]["nombre"] . " " . $_SESSION["usuario"]["apellidos"] . " (" . htmlspecialchars($_SESSION["usuario"]["rol"])) . ")" ?></span>
 						<button class="dropdown-btn">
@@ -121,7 +121,7 @@ $current_page = basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 					<li><a href="calendario" class="<?= ($current_page == 'calendario') ? 'active' : '' ?>">Calendario</a></li>
 					<li><a href="contacto" class="<?= ($current_page == 'contacto') ? 'active' : '' ?>">Contacto</a></li>
 					<li>
-						<?php if (isset($_SESSION["usuario"]["email"])) : ?>
+						<?php if (isset($_SESSION["usuario"]["userName"])) : ?>
 							<div class="dropdown-movil">
 								<span class="welcome-msg">
 									<?= htmlspecialchars($_SESSION["usuario"]["nombre"] . " " . $_SESSION["usuario"]["apellidos"] . " (" . htmlspecialchars($_SESSION["usuario"]["rol"])) . ")" ?>

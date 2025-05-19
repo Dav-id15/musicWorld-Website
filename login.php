@@ -1,14 +1,14 @@
 <?php
 session_start();
 
-if (isset($_SESSION["usuario"]["email"])) {
+if (isset($_SESSION["usuario"]["userName"])) {
     header("Location: ./");
 }
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     header('Content-Type: application/json');
 
-    $email = trim($_POST["email"]);
+    $userName = trim($_POST["userName"]);
     $password = trim($_POST["contraseña"]);
 
     // Cargar el archivo XML
@@ -20,12 +20,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Buscar el usuario en el XML
     foreach ($xml->usuario as $usuarioXML) {
-        if ((string) $usuarioXML->email === $email) {
+        if ((string) $usuarioXML->userName === $userName) {
             // Verificar la contraseña
             if (password_verify($password, (string) $usuarioXML->contraseña)) {
                 $_SESSION["usuario"]["nombre"] = (string) $usuarioXML->nombre;
                 $_SESSION["usuario"]["apellidos"] = (string) $usuarioXML->apellidos;
-                $_SESSION["usuario"]["email"] = (string) $usuarioXML->email;
+                $_SESSION["usuario"]["userName"] = (string) $usuarioXML->userName;
                 $_SESSION["usuario"]["rol"] = (string) $usuarioXML->rol;
 
                 $redirectUrl = "./";
@@ -61,8 +61,8 @@ include 'header.php';
             <p id="error-message" style="color: red; font-weight: bold;"></p>
 
             <form method="POST" action="login">
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="userName">Correo electrónico:</label>
+                <input type="text" id="userName" name="userName" required>
 
                 <label for="contraseña">Contraseña:</label>
                 <input type="password" id="contraseña" name="contraseña" required>

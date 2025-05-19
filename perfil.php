@@ -1,28 +1,28 @@
 <?php
 session_start();
 
-if (!isset($_SESSION["usuario"]["email"])) {
+if (!isset($_SESSION["usuario"]["userName"])) {
     header("Location: login");
     exit();
 }
 
 $archivo_xml = "xml/usuarios.xml";
 
-$email = $_SESSION["usuario"]["email"];
+$userName = $_SESSION["usuario"]["userName"];
 $nombre = $_SESSION["usuario"]["nombre"];
 $apellidos = $_SESSION["usuario"]["apellidos"];
 $rol = $_SESSION["usuario"]["rol"];
-$userData = getUserData($email, $archivo_xml);
+$userData = getUserData($userName, $archivo_xml);
 
 function getUserData($username, $archivo_xml) {
     $xml = simplexml_load_file($archivo_xml);
 
-    foreach ($xml->usuario as $email) {
-        if ($email->email == $username) {
+    foreach ($xml->usuario as $userName) {
+        if ($userName->userName == $username) {
             return [
-                'nombre' => (string) $email->nombre,
-                'apellidos' => (string) $email->apellidos,
-                'email' => (string) $email->email
+                'nombre' => (string) $userName->nombre,
+                'apellidos' => (string) $userName->apellidos,
+                'userName' => (string) $userName->userName
             ];
         }
     }
@@ -33,18 +33,18 @@ function getUserData($username, $archivo_xml) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $newNombre = $_POST["nombre"];
     $newApellidos = $_POST["apellidos"];
-    $newEmail = $_POST["email"];
+    $newuserName = $_POST["userName"];
 
     $xml = simplexml_load_file($archivo_xml);
 
     foreach ($xml->usuario as $usuario) {
-        if ($usuario->email == $email) {
+        if ($usuario->userName == $userName) {
             $usuario->nombre = $newNombre;
             $usuario->apellidos = $newApellidos;
-            $usuario->email = $newEmail;
+            $usuario->userName = $newuserName;
             $_SESSION["usuario"]["nombre"] = $newNombre;
             $_SESSION["usuario"]["apellidos"] = $newApellidos;
-            $_SESSION["usuario"]["email"] = $newEmail;
+            $_SESSION["usuario"]["userName"] = $newuserName;
             break;
         }
     }
@@ -70,7 +70,7 @@ function getUsersFromXML($archivo_xml) {
         $usuarios[] = [
             'nombre' => (string) $usuario->nombre,
             'apellidos' => (string) $usuario->apellidos,
-            'email' => (string) $usuario->email,
+            'userName' => (string) $usuario->userName,
             'rol' => (string) $usuario->rol
         ];
     }
@@ -93,8 +93,8 @@ include 'header.php';
                     <label for="apellidos">Apellidos:</label>
                     <input type="text" id="apellidos" name="apellidos" value="<?= htmlspecialchars($userData['apellidos']) ?>" class="perfil-input" required>
         
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" value="<?= htmlspecialchars($userData['email']) ?>" class="perfil-input" required>
+                    <label for="userName">Usuario:</label>
+                    <input type="text" id="userName" name="userName" value="<?= htmlspecialchars($userData['userName']) ?>" class="perfil-input" required>
         
                     <input type="submit" name="update_user" value="Actualizar Datos">
                 </form>
@@ -112,7 +112,7 @@ include 'header.php';
                             <tr>
                                 <th>Nombre</th>
                                 <th>Apellidos</th>
-                                <th>Correo Electrónico</th>
+                                <th>Usuario</th>
                                 <th>Rol</th>
                             </tr>
                         </thead>
@@ -128,7 +128,7 @@ include 'header.php';
                                 <tr>
                                     <td><?= htmlspecialchars($usuario['nombre']) ?></td>
                                     <td><?= htmlspecialchars($usuario['apellidos']) ?></td>
-                                    <td><?= htmlspecialchars($usuario['email']) ?></td>
+                                    <td><?= htmlspecialchars($usuario['userName']) ?></td>
                                     <td><?= htmlspecialchars($usuario['rol']) ?></td>
                                 </tr>
                             <?php endforeach; ?>
