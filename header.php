@@ -2,10 +2,12 @@
 
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
+	$_SESSION['media-url'] = "../imagenes/";
 }
 
 // Cargar el archivo XML
 $xml = simplexml_load_file("xml/temporadas.xml");
+$_SESSION['media-url'] = "../imagenes/";
 
 // Determinar la temporada seleccionada
 if (!isset($_SESSION['temporada'])) {
@@ -48,13 +50,13 @@ $current_page = basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 	<title>LPB - Baloncesto</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/responsive.css">
-	<link rel="shortcut icon" href="img/basketball.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/logoApp.png" type="image/x-icon">
 </head>
 
 <body login="<?= isset($_SESSION['userName']) ? 'true' : 'false'; ?>">
 	<header>
 		<div class="header-pc">
-			<div id="logonav"><a href="./"><img id="logo" src="img/logo200x200.png" alt="Logo"></a></div>
+			<div id="logonav"><a href="./"><img id="logo" src="img/LogoMusicWorld.png" alt="Logo"></a></div>
 			<nav id="navegador">
 				<ul>
 					<li><a href="./" class="<?= ($current_page == 'LM_Grupo4') ? 'active' : '' ?>">Inicio</a></li>

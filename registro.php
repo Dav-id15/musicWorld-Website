@@ -77,7 +77,7 @@ include 'header.php';
                 <label for="apellidos">Apellidos:</label>
                 <input type="text" id="apellidos" name="apellidos">
 
-                <label for="userName">Correo electrónico:</label>
+                <label for="userName">Usuario:</label>
                 <input type="text" id="userName" name="userName" required>
 
                 <label for="contraseña">Contraseña:</label>

@@ -19,7 +19,7 @@ header {
 .header-pc {
     display: flex;
 	align-items: center;
-	background-color: #5786C3;
+	background-color: #cfdfe6;
 	width: 100%;
 	opacity: 0.8;
 }
@@ -55,7 +55,7 @@ header {
 
 #navegador ul a {
 	text-decoration: none;
-	color: #F2EBC3;
+	color: #3375b1;
 	font-size: 1.5em;
 	position: relative;
 	transition: color 0.3s ease-in-out;
@@ -63,17 +63,17 @@ header {
 }
 
 #navegador ul a:hover {
-	color: #F46B20;
+	color: #64cfff;
 }
 
 #navegador ul a.active {
-	background-color: #F46B20;
+	background-color: white;
 	border-radius: 0.2em;
 	transition: 0.5s;
 }
 
 #navegador ul a.active:hover {
-	color: #F2EBC3;
+	color: #3375b1;
 }
 
 .menu-icon {
@@ -86,7 +86,7 @@ header {
 }
 
 .login-button {
-    background-color: #F46B20;
+    background-color: #3375b1;
     border-radius: 0.5em;
     padding: 0.5em 1em;
     box-shadow: none;
@@ -98,7 +98,7 @@ header {
 }
 
 .login-button:hover {
-    background-color: #df5d16;
+    background-color: #73d4ff;
 }
 
 .login-button a {
@@ -117,7 +117,7 @@ header {
 .welcome-msg {
     font-size: 1.1em;
     font-weight: bold;
-    color: #F2EBC3;
+    color: #3375b1;
     margin-right: 0.8em;
 }
 
@@ -129,7 +129,7 @@ header {
     align-items: center;
     cursor: pointer;
     padding: 0;
-    color: #F2EBC3
+    color: #3375b1
 }
 
 .dropdown-content {
@@ -190,7 +190,7 @@ header {
     cursor: pointer;
     font-size: 1em;
     margin-left: 0.3125em;
-    color: #F2EBC3;
+    color: #3375b1;
     transition: transform 0.3s ease;
 }
 
@@ -517,7 +517,7 @@ footer {
     align-items: center;
     text-align: center;
     flex-grow: 1;
-    color: #F2EBC3;
+    color: #3375b1;
     font-size: 1.25em;
 }
 
@@ -1072,7 +1072,7 @@ footer {
 }
 
 .new-user-button {
-    background-color: #F46B20;
+    background-color: #73d4ff;
     border-radius: 0.5em;
     padding: 0.5em 1em;
     box-shadow: none;

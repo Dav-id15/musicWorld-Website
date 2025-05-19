@@ -15,8 +15,8 @@
     <rol>Entrenador</rol>
   </usuario>
   <usuario>
-    <nombre>admin</nombre>
-    <apellidos/>
+    <nombre>nombre</nombre>
+    <apellidos>Apellidos</apellidos>
     <userName>admin</userName>
     <contraseña>$2y$10$I4dqanWvK/rmDnOcUsKuD.OW17SAD4r5Ij4JwQzAh2I1s44bYywbe</contraseña>
     <rol>Administrador</rol>
@@ -34,5 +34,12 @@
     <userName>manual</userName>
     <contraseña>$2y$10$zWKkOZvywdMQExiCBryo8.jqCbuGCXd5rDvB/7966WqDu17K2F6sO</contraseña>
     <rol>&#xC1;rbitro</rol>
+  </usuario>
+  <usuario>
+    <nombre>ex</nombre>
+    <apellidos>ex1</apellidos>
+    <userName>user</userName>
+    <contraseña>$2y$10$CjvsIBNbwtBaKoPiMSER1.l3YuGrAom.EAuIQcZ27zzRy6uzCPKiK</contraseña>
+    <rol>Administrador</rol>
   </usuario>
 </usuarios>
