@@ -2,12 +2,10 @@
 
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
-	$_SESSION['media-url'] = "../imagenes/";
 }
 
 // Cargar el archivo XML
 $xml = simplexml_load_file("xml/temporadas.xml");
-$_SESSION['media-url'] = "../imagenes/";
 
 // Determinar la temporada seleccionada
 if (!isset($_SESSION['temporada'])) {
@@ -53,44 +51,19 @@ $current_page = basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 	<link rel="shortcut icon" href="img/logoApp.png" type="image/x-icon">
 </head>
 
-<body login="<?= isset($_SESSION['userName']) ? 'true' : 'false'; ?>">
+<body login="<?= isset($_SESSION["usuario"]['email']) ? 'true' : 'false'; ?>">
 	<header>
 		<div class="header-pc">
 			<div id="logonav"><a href="./"><img id="logo" src="img/LogoMusicWorld.png" alt="Logo"></a></div>
 			<nav id="navegador">
 				<ul>
-					<li><a href="./" class="<?= ($current_page == 'LM_Grupo4') ? 'active' : '' ?>">Inicio</a></li>
-					<li><a href="noticias" class="<?= ($current_page == 'noticias') ? 'active' : '' ?>">Noticias</a></li>
-					<li><a href="clasificacion" class="<?= ($current_page == 'clasificacion') ? 'active' : '' ?>">Clasificación</a></li>
-					<li><a href="equipos" class="<?= ($current_page == 'equipos') ? 'active' : '' ?>">Equipos</a></li>
-					<li><a href="calendario" class="<?= ($current_page == 'calendario') ? 'active' : '' ?>">Calendario</a></li>
+					<li><a href="calendario" class="<?= ($current_page == 'calendario') ? 'active' : '' ?>">Pedidos</a></li>
+					<li><a href="equipos" class="<?= ($current_page == 'equipos') ? 'active' : '' ?>">Tienda</a></li>
 					<li><a href="contacto" class="<?= ($current_page == 'contacto') ? 'active' : '' ?>">Contacto</a></li>
 				</ul>
 			</nav>
-			<div class="temporada-select">
-				<label for="temporadaSelect">Temporada:</label>
-				<select id="temporadaSelect" name="temporada">
-					<?php
-					if ($xml) {
-						foreach ($xml->temporada as $temporada) {
-							$nombreTemporada = htmlspecialchars((string) $temporada->nombre);
-							$estado = (string) $temporada->estado;
-
-							$rolUsuario = isset($_SESSION["rol"]) ? $_SESSION["rol"] : '';
-
-							if ($estado !== 'En creación' || in_array($rolUsuario, ['Administrador', 'Entrenador'])) {
-								$selected = ($_SESSION['temporada'] === $nombreTemporada) ? 'selected' : '';
-								echo "<option value=\"$nombreTemporada\" $selected>$nombreTemporada</option>";
-							}
-						}
-					} else {
-						echo "<option value=\"\">Error al cargar las temporadas</option>";
-					}
-					?>
-				</select>
-			</div>
 			<div>
-				<?php if (isset($_SESSION["usuario"]["userName"])) : ?>
+				<?php if (isset($_SESSION["usuario"]["email"])) : ?>
 					<div class="dropdown">
 						<span class="welcome-msg"><?= htmlspecialchars($_SESSION["usuario"]["nombre"] . " " . $_SESSION["usuario"]["apellidos"] . " (" . htmlspecialchars($_SESSION["usuario"]["rol"])) . ")" ?></span>
 						<button class="dropdown-btn">
@@ -98,6 +71,9 @@ $current_page = basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 						</button>
 						<div class="dropdown-content">
 							<a href="perfil">Mi perfil</a>
+							<?php if ($_SESSION["usuario"]["rol"] === "Administrador") : ?>
+								<a href="usuarios">Usuarios</a>
+							<?php endif; ?>
 							<a href="logout" class="logoutbtn">Cerrar sesión</a>
 						</div>
 					</div>
@@ -110,7 +86,6 @@ $current_page = basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 			<div id="logonav">
 				<a href="/">
 					<img id="logo" src="img/LogoMusicWorld.png" alt="Logo">
-					<img src="img/lpb.png" alt="logo">
 				</a>
 				<i class="fa fa-bars menu-icon" id="menu-icon"></i>
 			</div>
@@ -123,7 +98,7 @@ $current_page = basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 					<li><a href="calendario" class="<?= ($current_page == 'calendario') ? 'active' : '' ?>">Calendario</a></li>
 					<li><a href="contacto" class="<?= ($current_page == 'contacto') ? 'active' : '' ?>">Contacto</a></li>
 					<li>
-						<?php if (isset($_SESSION["usuario"]["userName"])) : ?>
+						<?php if (isset($_SESSION["usuario"]["email"])) : ?>
 							<div class="dropdown-movil">
 								<span class="welcome-msg">
 									<?= htmlspecialchars($_SESSION["usuario"]["nombre"] . " " . $_SESSION["usuario"]["apellidos"] . " (" . htmlspecialchars($_SESSION["usuario"]["rol"])) . ")" ?>
@@ -133,6 +108,9 @@ $current_page = basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 								</button>
 								<div class="dropdown-content-movil">
 									<a href="perfil">Mi perfil</a>
+									<?php if ($_SESSION["usuario"]["rol"] === "Administrador") : ?>
+										<a href="usuarios">Usuarios</a>
+									<?php endif; ?>
 									<a href="logout">Cerrar sesión</a>
 								</div>
 							</div>

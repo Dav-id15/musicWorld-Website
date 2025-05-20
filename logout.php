@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if (isset($_SESSION["usuario"]["userName"])) {
+if (isset($_SESSION["usuario"]["email"])) {
     session_destroy(); // Destruye todas las variables de sesión
     header("Location: ./"); // Redirige a inicio
     exit();

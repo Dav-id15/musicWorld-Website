@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $nombre = trim($_POST["nombre"]);
     $apellidos = trim($_POST["apellidos"]);
-    $userName = trim($_POST["userName"]);
+    $email = trim($_POST["email"]);
     $password = trim($_POST["contraseña"]);
     $confirm_password = trim($_POST["confirmar-contraseña"]);
     $rol = trim($_POST["rol"]);
@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
     
     foreach ($xml->usuario as $usuarioXML) {
-        if ((string) $usuarioXML->userName === $userName) {
+        if ((string) $usuarioXML->email === $email) {
             echo json_encode(["status" => "error", "message" => "El usuario ya existe"]);
             exit();
         }
@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nuevo_usuario = $xml->addChild('usuario');
     $nuevo_usuario->addChild('nombre', $nombre);
     $nuevo_usuario->addChild('apellidos', $apellidos);
-    $nuevo_usuario->addChild('userName', $userName);
+    $nuevo_usuario->addChild('email', $email);
     $nuevo_usuario->addChild('contraseña', $password_hashed);
     $nuevo_usuario->addChild('rol', $rol);
 
@@ -77,8 +77,8 @@ include 'header.php';
                 <label for="apellidos">Apellidos:</label>
                 <input type="text" id="apellidos" name="apellidos">
 
-                <label for="userName">Usuario:</label>
-                <input type="text" id="userName" name="userName" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
 
                 <label for="contraseña">Contraseña:</label>
                 <input type="password" id="contraseña" name="contraseña" required>

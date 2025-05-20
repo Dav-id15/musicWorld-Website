@@ -1,14 +1,14 @@
 <?php
 session_start();
 
-if (isset($_SESSION["usuario"]["userName"])) {
+if (isset($_SESSION["usuario"]["email"])) {
     header("Location: ./");
 }
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     header('Content-Type: application/json');
 
-    $userName = trim($_POST["userName"]);
+    $email = trim($_POST["email"]);
     $password = trim($_POST["contraseña"]);
 
     // Cargar el archivo XML
@@ -20,21 +20,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Buscar el usuario en el XML
     foreach ($xml->usuario as $usuarioXML) {
-        if ((string) $usuarioXML->userName === $userName) {
+        if ((string) $usuarioXML->email === $email) {
             // Verificar la contraseña
             if (password_verify($password, (string) $usuarioXML->contraseña)) {
                 $_SESSION["usuario"]["nombre"] = (string) $usuarioXML->nombre;
                 $_SESSION["usuario"]["apellidos"] = (string) $usuarioXML->apellidos;
-                $_SESSION["usuario"]["userName"] = (string) $usuarioXML->userName;
+                $_SESSION["usuario"]["email"] = (string) $usuarioXML->email;
                 $_SESSION["usuario"]["rol"] = (string) $usuarioXML->rol;
 
                 $redirectUrl = "./";
                 if ($_SESSION["usuario"]["rol"] === "Administrador") {
-                    $redirectUrl = "perfil";
-                } elseif ($_SESSION["usuario"]["rol"] === "Árbitro") {
+                    $redirectUrl = "usuarios";
+                } elseif ($_SESSION["usuario"]["rol"] === "usuario") {
                     $redirectUrl = "calendario";
-                } elseif ($_SESSION["usuario"]["rol"] === "Entrenador") {
-                    $redirectUrl = "equipos";
                 }
 
                 echo json_encode(["status" => "success", "message" => "Inicio de sesión exitoso", "redirect" => $redirectUrl]);
@@ -61,8 +59,8 @@ include 'header.php';
             <p id="error-message" style="color: red; font-weight: bold;"></p>
 
             <form method="POST" action="login">
-                <label for="userName">Correo electrónico:</label>
-                <input type="text" id="userName" name="userName" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
 
                 <label for="contraseña">Contraseña:</label>
                 <input type="password" id="contraseña" name="contraseña" required>

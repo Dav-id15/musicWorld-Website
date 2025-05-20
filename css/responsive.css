@@ -195,6 +195,10 @@
     .temporada-select {
         margin-top: 1.5em;
     }
+
+    .usuarios {
+        width: 75%;
+    }
 }
 
 /* PANTALLAS 720p */
