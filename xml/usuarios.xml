@@ -102,8 +102,6 @@
 			Usuario
 		</rol>
 	</usuario>
-<<<<<<< Updated upstream
-=======
 	<usuario>
 		<nombre>
 			Elena
@@ -274,5 +272,4 @@
 			Usuario
 		</rol>
 	</usuario>
->>>>>>> Stashed changes
 </usuarios>

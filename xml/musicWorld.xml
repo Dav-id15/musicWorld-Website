@@ -3,105 +3,6 @@
 		<pedidos>
 			<pedido>
 				<cod_pedido>
-<<<<<<< Updated upstream
-					53
-				</cod_pedido>
-				<codigo>
-					202
-				</codigo>
-				<articulo>
-					Maracas
-				</articulo>
-				<direccion>
-					Calle Director 100
-				</direccion>
-				<fecha>
-					2025-05-21
-				</fecha>
-				<hora>
-					19:37:25
-				</hora>
-				<cantidad>
-					1
-				</cantidad>
-				<precio>
-					19.99
-				</precio>
-				<pagado>
-					19.99
-				</pagado>
-				<correo>
-					Director@correo.com
-				</correo>
-			</pedido>
-			<pedido>
-				<cod_pedido>
-					19
-				</cod_pedido>
-				<codigo>
-					202
-				</codigo>
-				<articulo>
-					Maracas
-				</articulo>
-				<direccion>
-					Calle Director 100
-				</direccion>
-				<fecha>
-					2025-05-21
-				</fecha>
-				<hora>
-					10:22:48
-				</hora>
-				<cantidad>
-					1
-				</cantidad>
-				<precio>
-					19.99
-				</precio>
-				<pagado>
-					19.99
-				</pagado>
-				<correo>
-					Director@correo.com
-				</correo>
-			</pedido>
-			<pedido>
-				<cod_pedido>
-					14
-				</cod_pedido>
-				<codigo>
-					201
-				</codigo>
-				<articulo>
-					Guitarra
-				</articulo>
-				<direccion>
-					Calle Director 100
-				</direccion>
-				<fecha>
-					2025-05-21
-				</fecha>
-				<hora>
-					08:03:25
-				</hora>
-				<cantidad>
-					1
-				</cantidad>
-				<precio>
-					499.99
-				</precio>
-				<pagado>
-					499.99
-				</pagado>
-				<correo>
-					Director@correo.com
-				</correo>
-			</pedido>
-			<pedido>
-				<cod_pedido>
-=======
->>>>>>> Stashed changes
 					5
 				</cod_pedido>
 				<codigo>
@@ -123,17 +24,10 @@
 					3
 				</cantidad>
 				<precio>
-<<<<<<< Updated upstream
-					399.99
-				</precio>
-				<pagado>
-					1199.97
-=======
 					249.99
 				</precio>
 				<pagado>
 					749.97
->>>>>>> Stashed changes
 				</pagado>
 				<correo>
 					luisramirez@example.com
@@ -141,8 +35,6 @@
 			</pedido>
 			<pedido>
 				<cod_pedido>
-<<<<<<< Updated upstream
-=======
 					22
 				</cod_pedido>
 				<codigo>
@@ -367,7 +259,6 @@
 			</pedido>
 			<pedido>
 				<cod_pedido>
->>>>>>> Stashed changes
 					8
 				</cod_pedido>
 				<codigo>
@@ -389,17 +280,10 @@
 					1
 				</cantidad>
 				<precio>
-<<<<<<< Updated upstream
-					499.99
-				</precio>
-				<pagado>
-					499.99
-=======
 					459.99
 				</precio>
 				<pagado>
 					459.99
->>>>>>> Stashed changes
 				</pagado>
 				<correo>
 					carlosgomez@example.com
@@ -439,8 +323,6 @@
 			</pedido>
 			<pedido>
 				<cod_pedido>
-<<<<<<< Updated upstream
-=======
 					19
 				</cod_pedido>
 				<codigo>
@@ -537,7 +419,6 @@
 			</pedido>
 			<pedido>
 				<cod_pedido>
->>>>>>> Stashed changes
 					6
 				</cod_pedido>
 				<codigo>
@@ -570,8 +451,6 @@
 			</pedido>
 			<pedido>
 				<cod_pedido>
-<<<<<<< Updated upstream
-=======
 					12
 				</cod_pedido>
 				<codigo>
@@ -700,7 +579,6 @@
 			</pedido>
 			<pedido>
 				<cod_pedido>
->>>>>>> Stashed changes
 					1
 				</cod_pedido>
 				<codigo>
@@ -722,17 +600,10 @@
 					1
 				</cantidad>
 				<precio>
-<<<<<<< Updated upstream
-					499.99
-				</precio>
-				<pagado>
-					499.99
-=======
 					459.99
 				</precio>
 				<pagado>
 					459.99
->>>>>>> Stashed changes
 				</pagado>
 				<correo>
 					juanperez@example.com
@@ -740,8 +611,6 @@
 			</pedido>
 			<pedido>
 				<cod_pedido>
-<<<<<<< Updated upstream
-=======
 					23
 				</cod_pedido>
 				<codigo>
@@ -774,7 +643,6 @@
 			</pedido>
 			<pedido>
 				<cod_pedido>
->>>>>>> Stashed changes
 					7
 				</cod_pedido>
 				<codigo>
@@ -796,17 +664,10 @@
 					1
 				</cantidad>
 				<precio>
-<<<<<<< Updated upstream
-					649.99
-				</precio>
-				<pagado>
-					649.99
-=======
 					599.99
 				</precio>
 				<pagado>
 					599.99
->>>>>>> Stashed changes
 				</pagado>
 				<correo>
 					marialopez@example.com
@@ -820,11 +681,7 @@
 					202
 				</codigo>
 				<articulo>
-<<<<<<< Updated upstream
-					Maracas
-=======
 					Bajo
->>>>>>> Stashed changes
 				</articulo>
 				<direccion>
 					Avenida Siempre Viva 456
@@ -839,17 +696,10 @@
 					2
 				</cantidad>
 				<precio>
-<<<<<<< Updated upstream
-					19.99
-				</precio>
-				<pagado>
-					39.98
-=======
 					399.99
 				</precio>
 				<pagado>
 					799.98
->>>>>>> Stashed changes
 				</pagado>
 				<correo>
 					marialopez@example.com
@@ -857,8 +707,6 @@
 			</pedido>
 			<pedido>
 				<cod_pedido>
-<<<<<<< Updated upstream
-=======
 					13
 				</cod_pedido>
 				<codigo>
@@ -987,7 +835,6 @@
 			</pedido>
 			<pedido>
 				<cod_pedido>
->>>>>>> Stashed changes
 					4
 				</cod_pedido>
 				<codigo>
@@ -1009,17 +856,10 @@
 					1
 				</cantidad>
 				<precio>
-<<<<<<< Updated upstream
-					649.99
-				</precio>
-				<pagado>
-					649.99
-=======
 					599.99
 				</precio>
 				<pagado>
 					599.99
->>>>>>> Stashed changes
 				</pagado>
 				<correo>
 					anafernandez@example.com
@@ -1048,24 +888,15 @@
 					1
 				</cantidad>
 				<precio>
-<<<<<<< Updated upstream
-					399.99
-				</precio>
-				<pagado>
-					399.99
-=======
 					249.99
 				</precio>
 				<pagado>
 					249.99
->>>>>>> Stashed changes
 				</pagado>
 				<correo>
 					anafernandez@example.com
 				</correo>
 			</pedido>
-<<<<<<< Updated upstream
-=======
 			<pedido>
 				<cod_pedido>
 					24
@@ -1130,7 +961,6 @@
 					isabelserrano@example.com
 				</correo>
 			</pedido>
->>>>>>> Stashed changes
 		</pedidos>
 
 		<articulos>
@@ -1142,17 +972,10 @@
 					Guitarra
 				</nombre>
 				<precio>
-<<<<<<< Updated upstream
-					499.99
-				</precio>
-				<stock>
-					1600
-=======
 					459.99
 				</precio>
 				<stock>
 					15
->>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
@@ -1160,15 +983,6 @@
 					202
 				</codigo>
 				<nombre>
-<<<<<<< Updated upstream
-					Maracas
-				</nombre>
-				<precio>
-					19.99
-				</precio>
-				<stock>
-					1999
-=======
 					Bajo
 				</nombre>
 				<precio>
@@ -1176,7 +990,6 @@
 				</precio>
 				<stock>
 					10
->>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
@@ -1190,11 +1003,7 @@
 					799.99
 				</precio>
 				<stock>
-<<<<<<< Updated upstream
-					4000
-=======
 					5
->>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
@@ -1205,17 +1014,10 @@
 					Piano
 				</nombre>
 				<precio>
-<<<<<<< Updated upstream
-					649.99
-				</precio>
-				<stock>
-					3200
-=======
 					599.99
 				</precio>
 				<stock>
 					8
->>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
@@ -1226,12 +1028,6 @@
 					Violin
 				</nombre>
 				<precio>
-<<<<<<< Updated upstream
-					399.99
-				</precio>
-				<stock>
-					1600
-=======
 					249.99
 				</precio>
 				<stock>
@@ -1306,7 +1102,6 @@
 				</precio>
 				<stock>
 					10
->>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
@@ -1314,15 +1109,6 @@
 					211
 				</codigo>
 				<nombre>
-<<<<<<< Updated upstream
-					Clarinete
-				</nombre>
-				<precio>
-					99.99
-				</precio>
-				<stock>
-					2000
-=======
 					Maracas
 				</nombre>
 				<precio>
@@ -1330,7 +1116,6 @@
 				</precio>
 				<stock>
 					40
->>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
@@ -1338,15 +1123,6 @@
 					212
 				</codigo>
 				<nombre>
-<<<<<<< Updated upstream
-					Flauta
-				</nombre>
-				<precio>
-					129.99
-				</precio>
-				<stock>
-					1000
-=======
 					Saxofón
 				</nombre>
 				<precio>
@@ -1354,7 +1130,6 @@
 				</precio>
 				<stock>
 					6
->>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
@@ -1362,15 +1137,6 @@
 					213
 				</codigo>
 				<nombre>
-<<<<<<< Updated upstream
-					Bajo
-				</nombre>
-				<precio>
-					499.99
-				</precio>
-				<stock>
-					4500
-=======
 					Teclado
 				</nombre>
 				<precio>
@@ -1378,7 +1144,6 @@
 				</precio>
 				<stock>
 					9
->>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
@@ -1386,15 +1151,6 @@
 					214
 				</codigo>
 				<nombre>
-<<<<<<< Updated upstream
-					Trompeta
-				</nombre>
-				<precio>
-					349.99
-				</precio>
-				<stock>
-					3600
-=======
 					Trombón
 				</nombre>
 				<precio>
@@ -1416,7 +1172,6 @@
 				</precio>
 				<stock>
 					3
->>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
@@ -1424,15 +1179,6 @@
 					216
 				</codigo>
 				<nombre>
-<<<<<<< Updated upstream
-					Teclado
-				</nombre>
-				<precio>
-					699.99
-				</precio>
-				<stock>
-					3500
-=======
 					Trompeta
 				</nombre>
 				<precio>
@@ -1440,100 +1186,11 @@
 				</precio>
 				<stock>
 					8
->>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
 				<codigo>
-<<<<<<< Updated upstream
-					218
-				</codigo>
-				<nombre>
-					Castañuelas
-				</nombre>
-				<precio>
-					299.99
-				</precio>
-				<stock>
-					2100
-				</stock>
-			</articulo>
-			<articulo>
-				<codigo>
-					219
-				</codigo>
-				<nombre>
-					Conga
-				</nombre>
-				<precio>
-					129.99
-				</precio>
-				<stock>
-					1600
-				</stock>
-			</articulo>
-			<articulo>
-				<codigo>
-					220
-				</codigo>
-				<nombre>
-					Lira
-				</nombre>
-				<precio>
-					299.99
-				</precio>
-				<stock>
-					2200
-				</stock>
-			</articulo>
-			<articulo>
-				<codigo>
-					221
-				</codigo>
-				<nombre>
-					Saxofon
-				</nombre>
-				<precio>
-					349.99
-				</precio>
-				<stock>
-					1700
-				</stock>
-			</articulo>
-			<articulo>
-				<codigo>
-					222
-				</codigo>
-				<nombre>
-					Trombon
-				</nombre>
-				<precio>
-					279.99
-				</precio>
-				<stock>
-					2500
-				</stock>
-			</articulo>
-			<articulo>
-				<codigo>
-					223
-				</codigo>
-				<nombre>
-					trompa
-				</nombre>
-				<precio>
-					699.99
-				</precio>
-				<stock>
-					1600
-				</stock>
-			</articulo>
-			<articulo>
-				<codigo>
-					224
-=======
 					217
->>>>>>> Stashed changes
 				</codigo>
 				<nombre>
 					Tuba
@@ -1542,25 +1199,7 @@
 					699.99
 				</precio>
 				<stock>
-<<<<<<< Updated upstream
-					2600
-				</stock>
-			</articulo>
-			<articulo>
-				<codigo>
-					225
-				</codigo>
-				<nombre>
-					Donacion
-				</nombre>
-				<precio>
-					1.0
-				</precio>
-				<stock>
-					1000000
-=======
 					2
->>>>>>> Stashed changes
 				</stock>
 			</articulo>
 		</articulos>

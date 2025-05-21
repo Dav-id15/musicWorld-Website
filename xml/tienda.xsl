@@ -6,7 +6,7 @@
         <div class="contenedor-equipos">
             <div class="temporada-header">
                 <h1>Todo nuestros Artículos:</h1>
-                <h2>Lo mejor en productos musicales de lata gama</h2>
+                <h2>Lo mejor en productos musicales de alta gama</h2>
             </div>
 
             <!-- Lista de artículos -->
