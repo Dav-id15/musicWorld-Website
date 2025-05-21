@@ -3,6 +3,7 @@
 		<pedidos>
 			<pedido>
 				<cod_pedido>
+<<<<<<< Updated upstream
 					53
 				</cod_pedido>
 				<codigo>
@@ -99,6 +100,8 @@
 			</pedido>
 			<pedido>
 				<cod_pedido>
+=======
+>>>>>>> Stashed changes
 					5
 				</cod_pedido>
 				<codigo>
@@ -120,10 +123,17 @@
 					3
 				</cantidad>
 				<precio>
+<<<<<<< Updated upstream
 					399.99
 				</precio>
 				<pagado>
 					1199.97
+=======
+					249.99
+				</precio>
+				<pagado>
+					749.97
+>>>>>>> Stashed changes
 				</pagado>
 				<correo>
 					luisramirez@example.com
@@ -131,6 +141,233 @@
 			</pedido>
 			<pedido>
 				<cod_pedido>
+<<<<<<< Updated upstream
+=======
+					22
+				</cod_pedido>
+				<codigo>
+					217
+				</codigo>
+				<articulo>
+					Tuba
+				</articulo>
+				<direccion>
+					Avenida Siempre Viva 456
+				</direccion>
+				<fecha>
+					2024-06-19
+				</fecha>
+				<hora>
+					09:01:45
+				</hora>
+				<cantidad>
+					2
+				</cantidad>
+				<precio>
+					699.99
+				</precio>
+				<pagado>
+					1399.98
+				</pagado>
+				<correo>
+					marialopez@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+					28
+				</cod_pedido>
+				<codigo>
+					201
+				</codigo>
+				<articulo>
+					Guitarra
+				</articulo>
+				<direccion>
+					Calle Este 505
+				</direccion>
+				<fecha>
+					2024-05-06
+				</fecha>
+				<hora>
+					14:14:14
+				</hora>
+				<cantidad>
+					1
+				</cantidad>
+				<precio>
+					459.99
+				</precio>
+				<pagado>
+					459.99
+				</pagado>
+				<correo>
+					lucianavarro@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+					14
+				</cod_pedido>
+				<codigo>
+					209
+				</codigo>
+				<articulo>
+					Conga
+				</articulo>
+				<direccion>
+					Paseo del Rio 606
+				</direccion>
+				<fecha>
+					2024-04-09
+				</fecha>
+				<hora>
+					17:45:16
+				</hora>
+				<cantidad>
+					3
+				</cantidad>
+				<precio>
+					349.99
+				</precio>
+				<pagado>
+					1049.97
+				</pagado>
+				<correo>
+					raulcano@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+					10
+				</cod_pedido>
+				<codigo>
+					202
+				</codigo>
+				<articulo>
+					Bajo
+				</articulo>
+				<direccion>
+					Calle Luna 202
+				</direccion>
+				<fecha>
+					2024-03-17
+				</fecha>
+				<hora>
+					16:44:36
+				</hora>
+				<cantidad>
+					1
+				</cantidad>
+				<precio>
+					399.99
+				</precio>
+				<pagado>
+					399.99
+				</pagado>
+				<correo>
+					luisramirez@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+					17
+				</cod_pedido>
+				<codigo>
+					212
+				</codigo>
+				<articulo>
+					Saxofón
+				</articulo>
+				<direccion>
+					Plaza Central 909
+				</direccion>
+				<fecha>
+					2024-01-07
+				</fecha>
+				<hora>
+					16:17:19
+				</hora>
+				<cantidad>
+					1
+				</cantidad>
+				<precio>
+					499.99
+				</precio>
+				<pagado>
+					499.99
+				</pagado>
+				<correo>
+					sofiadelgado@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+					25
+				</cod_pedido>
+				<codigo>
+					208
+				</codigo>
+				<articulo>
+					Flauta
+				</articulo>
+				<direccion>
+					Calle Luna 202
+				</direccion>
+				<fecha>
+					2023-12-22
+				</fecha>
+				<hora>
+					19:40:40
+				</hora>
+				<cantidad>
+					2
+				</cantidad>
+				<precio>
+					89.99
+				</precio>
+				<pagado>
+					179.98
+				</pagado>
+				<correo>
+					luisramirez@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+					16
+				</cod_pedido>
+				<codigo>
+					211
+				</codigo>
+				<articulo>
+					Maracas
+				</articulo>
+				<direccion>
+					Calle Mayor 808
+				</direccion>
+				<fecha>
+					2023-08-21
+				</fecha>
+				<hora>
+					13:50:33
+				</hora>
+				<cantidad>
+					2
+				</cantidad>
+				<precio>
+					19.99
+				</precio>
+				<pagado>
+					39.98
+				</pagado>
+				<correo>
+					miguelvega@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+>>>>>>> Stashed changes
 					8
 				</cod_pedido>
 				<codigo>
@@ -152,10 +389,17 @@
 					1
 				</cantidad>
 				<precio>
+<<<<<<< Updated upstream
 					499.99
 				</precio>
 				<pagado>
 					499.99
+=======
+					459.99
+				</precio>
+				<pagado>
+					459.99
+>>>>>>> Stashed changes
 				</pagado>
 				<correo>
 					carlosgomez@example.com
@@ -195,6 +439,105 @@
 			</pedido>
 			<pedido>
 				<cod_pedido>
+<<<<<<< Updated upstream
+=======
+					19
+				</cod_pedido>
+				<codigo>
+					214
+				</codigo>
+				<articulo>
+					Trombón
+				</articulo>
+				<direccion>
+					Calle Robles 111
+				</direccion>
+				<fecha>
+					2023-03-25
+				</fecha>
+				<hora>
+					14:03:55
+				</hora>
+				<cantidad>
+					2
+				</cantidad>
+				<precio>
+					459.99
+				</precio>
+				<pagado>
+					919.98
+				</pagado>
+				<correo>
+					paularuiz@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+					11
+				</cod_pedido>
+				<codigo>
+					206
+				</codigo>
+				<articulo>
+					Castañuelas
+				</articulo>
+				<direccion>
+					Calle Norte 303
+				</direccion>
+				<fecha>
+					2023-02-14
+				</fecha>
+				<hora>
+					15:12:44
+				</hora>
+				<cantidad>
+					1
+				</cantidad>
+				<precio>
+					49.99
+				</precio>
+				<pagado>
+					49.99
+				</pagado>
+				<correo>
+					elenamorales@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+					27
+				</cod_pedido>
+				<codigo>
+					204
+				</codigo>
+				<articulo>
+					Piano
+				</articulo>
+				<direccion>
+					Avenida Sur 404
+				</direccion>
+				<fecha>
+					2023-01-10
+				</fecha>
+				<hora>
+					17:00:00
+				</hora>
+				<cantidad>
+					2
+				</cantidad>
+				<precio>
+					599.99
+				</precio>
+				<pagado>
+					1199.98
+				</pagado>
+				<correo>
+					jorgecastillo@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+>>>>>>> Stashed changes
 					6
 				</cod_pedido>
 				<codigo>
@@ -227,6 +570,137 @@
 			</pedido>
 			<pedido>
 				<cod_pedido>
+<<<<<<< Updated upstream
+=======
+					12
+				</cod_pedido>
+				<codigo>
+					207
+				</codigo>
+				<articulo>
+					Clarinete
+				</articulo>
+				<direccion>
+					Avenida Sur 404
+				</direccion>
+				<fecha>
+					2022-11-01
+				</fecha>
+				<hora>
+					10:05:22
+				</hora>
+				<cantidad>
+					2
+				</cantidad>
+				<precio>
+					299.99
+				</precio>
+				<pagado>
+					599.98
+				</pagado>
+				<correo>
+					jorgecastillo@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+					18
+				</cod_pedido>
+				<codigo>
+					213
+				</codigo>
+				<articulo>
+					Teclado
+				</articulo>
+				<direccion>
+					Calle Jardines 010
+				</direccion>
+				<fecha>
+					2022-10-10
+				</fecha>
+				<hora>
+					18:29:07
+				</hora>
+				<cantidad>
+					3
+				</cantidad>
+				<precio>
+					329.99
+				</precio>
+				<pagado>
+					989.97
+				</pagado>
+				<correo>
+					diegoortega@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+					26
+				</cod_pedido>
+				<codigo>
+					202
+				</codigo>
+				<articulo>
+					Bajo
+				</articulo>
+				<direccion>
+					Calle Norte 303
+				</direccion>
+				<fecha>
+					2022-08-15
+				</fecha>
+				<hora>
+					11:22:11
+				</hora>
+				<cantidad>
+					1
+				</cantidad>
+				<precio>
+					399.99
+				</precio>
+				<pagado>
+					399.99
+				</pagado>
+				<correo>
+					elenamorales@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+					21
+				</cod_pedido>
+				<codigo>
+					216
+				</codigo>
+				<articulo>
+					Trompeta
+				</articulo>
+				<direccion>
+					Calle Falsa 123
+				</direccion>
+				<fecha>
+					2022-07-11
+				</fecha>
+				<hora>
+					10:43:21
+				</hora>
+				<cantidad>
+					1
+				</cantidad>
+				<precio>
+					389.99
+				</precio>
+				<pagado>
+					389.99
+				</pagado>
+				<correo>
+					juanperez@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+>>>>>>> Stashed changes
 					1
 				</cod_pedido>
 				<codigo>
@@ -248,10 +722,17 @@
 					1
 				</cantidad>
 				<precio>
+<<<<<<< Updated upstream
 					499.99
 				</precio>
 				<pagado>
 					499.99
+=======
+					459.99
+				</precio>
+				<pagado>
+					459.99
+>>>>>>> Stashed changes
 				</pagado>
 				<correo>
 					juanperez@example.com
@@ -259,6 +740,41 @@
 			</pedido>
 			<pedido>
 				<cod_pedido>
+<<<<<<< Updated upstream
+=======
+					23
+				</cod_pedido>
+				<codigo>
+					206
+				</codigo>
+				<articulo>
+					Castañuelas
+				</articulo>
+				<direccion>
+					Calle Gran Via 789
+				</direccion>
+				<fecha>
+					2021-11-30
+				</fecha>
+				<hora>
+					15:55:05
+				</hora>
+				<cantidad>
+					3
+				</cantidad>
+				<precio>
+					49.99
+				</precio>
+				<pagado>
+					149.97
+				</pagado>
+				<correo>
+					carlosgomez@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+>>>>>>> Stashed changes
 					7
 				</cod_pedido>
 				<codigo>
@@ -280,10 +796,17 @@
 					1
 				</cantidad>
 				<precio>
+<<<<<<< Updated upstream
 					649.99
 				</precio>
 				<pagado>
 					649.99
+=======
+					599.99
+				</precio>
+				<pagado>
+					599.99
+>>>>>>> Stashed changes
 				</pagado>
 				<correo>
 					marialopez@example.com
@@ -297,7 +820,11 @@
 					202
 				</codigo>
 				<articulo>
+<<<<<<< Updated upstream
 					Maracas
+=======
+					Bajo
+>>>>>>> Stashed changes
 				</articulo>
 				<direccion>
 					Avenida Siempre Viva 456
@@ -312,10 +839,17 @@
 					2
 				</cantidad>
 				<precio>
+<<<<<<< Updated upstream
 					19.99
 				</precio>
 				<pagado>
 					39.98
+=======
+					399.99
+				</precio>
+				<pagado>
+					799.98
+>>>>>>> Stashed changes
 				</pagado>
 				<correo>
 					marialopez@example.com
@@ -323,6 +857,137 @@
 			</pedido>
 			<pedido>
 				<cod_pedido>
+<<<<<<< Updated upstream
+=======
+					13
+				</cod_pedido>
+				<codigo>
+					208
+				</codigo>
+				<articulo>
+					Flauta
+				</articulo>
+				<direccion>
+					Calle Este 505
+				</direccion>
+				<fecha>
+					2021-06-18
+				</fecha>
+				<hora>
+					09:55:30
+				</hora>
+				<cantidad>
+					1
+				</cantidad>
+				<precio>
+					89.99
+				</precio>
+				<pagado>
+					89.99
+				</pagado>
+				<correo>
+					lucianavarro@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+					20
+				</cod_pedido>
+				<codigo>
+					215
+				</codigo>
+				<articulo>
+					Trompa
+				</articulo>
+				<direccion>
+					Avenida Libertad 212
+				</direccion>
+				<fecha>
+					2021-05-14
+				</fecha>
+				<hora>
+					12:34:20
+				</hora>
+				<cantidad>
+					1
+				</cantidad>
+				<precio>
+					559.99
+				</precio>
+				<pagado>
+					559.99
+				</pagado>
+				<correo>
+					hectorlorenzo@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+					29
+				</cod_pedido>
+				<codigo>
+					205
+				</codigo>
+				<articulo>
+					Violin
+				</articulo>
+				<direccion>
+					Paseo del Rio 606
+				</direccion>
+				<fecha>
+					2021-03-03
+				</fecha>
+				<hora>
+					16:30:30
+				</hora>
+				<cantidad>
+					1
+				</cantidad>
+				<precio>
+					249.99
+				</precio>
+				<pagado>
+					249.99
+				</pagado>
+				<correo>
+					raulcano@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+					15
+				</cod_pedido>
+				<codigo>
+					210
+				</codigo>
+				<articulo>
+					Lira
+				</articulo>
+				<direccion>
+					Camino Real 707
+				</direccion>
+				<fecha>
+					2020-12-30
+				</fecha>
+				<hora>
+					11:20:00
+				</hora>
+				<cantidad>
+					1
+				</cantidad>
+				<precio>
+					129.99
+				</precio>
+				<pagado>
+					129.99
+				</pagado>
+				<correo>
+					isabelserrano@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+>>>>>>> Stashed changes
 					4
 				</cod_pedido>
 				<codigo>
@@ -344,10 +1009,17 @@
 					1
 				</cantidad>
 				<precio>
+<<<<<<< Updated upstream
 					649.99
 				</precio>
 				<pagado>
 					649.99
+=======
+					599.99
+				</precio>
+				<pagado>
+					599.99
+>>>>>>> Stashed changes
 				</pagado>
 				<correo>
 					anafernandez@example.com
@@ -376,15 +1048,89 @@
 					1
 				</cantidad>
 				<precio>
+<<<<<<< Updated upstream
 					399.99
 				</precio>
 				<pagado>
 					399.99
+=======
+					249.99
+				</precio>
+				<pagado>
+					249.99
+>>>>>>> Stashed changes
 				</pagado>
 				<correo>
 					anafernandez@example.com
 				</correo>
 			</pedido>
+<<<<<<< Updated upstream
+=======
+			<pedido>
+				<cod_pedido>
+					24
+				</cod_pedido>
+				<codigo>
+					207
+				</codigo>
+				<articulo>
+					Clarinete
+				</articulo>
+				<direccion>
+					Calle Sol 101
+				</direccion>
+				<fecha>
+					2020-09-08
+				</fecha>
+				<hora>
+					13:13:13
+				</hora>
+				<cantidad>
+					1
+				</cantidad>
+				<precio>
+					299.99
+				</precio>
+				<pagado>
+					299.99
+				</pagado>
+				<correo>
+					anafernandez@example.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+					30
+				</cod_pedido>
+				<codigo>
+					203
+				</codigo>
+				<articulo>
+					Batería
+				</articulo>
+				<direccion>
+					Camino Real 707
+				</direccion>
+				<fecha>
+					2020-07-27
+				</fecha>
+				<hora>
+					08:45:55
+				</hora>
+				<cantidad>
+					3
+				</cantidad>
+				<precio>
+					799.99
+				</precio>
+				<pagado>
+					2399.97
+				</pagado>
+				<correo>
+					isabelserrano@example.com
+				</correo>
+			</pedido>
+>>>>>>> Stashed changes
 		</pedidos>
 
 		<articulos>
@@ -396,10 +1142,17 @@
 					Guitarra
 				</nombre>
 				<precio>
+<<<<<<< Updated upstream
 					499.99
 				</precio>
 				<stock>
 					1600
+=======
+					459.99
+				</precio>
+				<stock>
+					15
+>>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
@@ -407,6 +1160,7 @@
 					202
 				</codigo>
 				<nombre>
+<<<<<<< Updated upstream
 					Maracas
 				</nombre>
 				<precio>
@@ -414,6 +1168,15 @@
 				</precio>
 				<stock>
 					1999
+=======
+					Bajo
+				</nombre>
+				<precio>
+					399.99
+				</precio>
+				<stock>
+					10
+>>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
@@ -427,7 +1190,11 @@
 					799.99
 				</precio>
 				<stock>
+<<<<<<< Updated upstream
 					4000
+=======
+					5
+>>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
@@ -438,10 +1205,17 @@
 					Piano
 				</nombre>
 				<precio>
+<<<<<<< Updated upstream
 					649.99
 				</precio>
 				<stock>
 					3200
+=======
+					599.99
+				</precio>
+				<stock>
+					8
+>>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
@@ -452,10 +1226,87 @@
 					Violin
 				</nombre>
 				<precio>
+<<<<<<< Updated upstream
 					399.99
 				</precio>
 				<stock>
 					1600
+=======
+					249.99
+				</precio>
+				<stock>
+					20
+				</stock>
+			</articulo>
+			<articulo>
+				<codigo>
+					206
+				</codigo>
+				<nombre>
+					Castañuelas
+				</nombre>
+				<precio>
+					49.99
+				</precio>
+				<stock>
+					25
+				</stock>
+			</articulo>
+			<articulo>
+				<codigo>
+					207
+				</codigo>
+				<nombre>
+					Clarinete
+				</nombre>
+				<precio>
+					299.99
+				</precio>
+				<stock>
+					12
+				</stock>
+			</articulo>
+			<articulo>
+				<codigo>
+					208
+				</codigo>
+				<nombre>
+					Flauta
+				</nombre>
+				<precio>
+					89.99
+				</precio>
+				<stock>
+					30
+				</stock>
+			</articulo>
+			<articulo>
+				<codigo>
+					209
+				</codigo>
+				<nombre>
+					Conga
+				</nombre>
+				<precio>
+					349.99
+				</precio>
+				<stock>
+					7
+				</stock>
+			</articulo>
+			<articulo>
+				<codigo>
+					210
+				</codigo>
+				<nombre>
+					Lira
+				</nombre>
+				<precio>
+					129.99
+				</precio>
+				<stock>
+					10
+>>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
@@ -463,6 +1314,7 @@
 					211
 				</codigo>
 				<nombre>
+<<<<<<< Updated upstream
 					Clarinete
 				</nombre>
 				<precio>
@@ -470,6 +1322,15 @@
 				</precio>
 				<stock>
 					2000
+=======
+					Maracas
+				</nombre>
+				<precio>
+					19.99
+				</precio>
+				<stock>
+					40
+>>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
@@ -477,6 +1338,7 @@
 					212
 				</codigo>
 				<nombre>
+<<<<<<< Updated upstream
 					Flauta
 				</nombre>
 				<precio>
@@ -484,6 +1346,15 @@
 				</precio>
 				<stock>
 					1000
+=======
+					Saxofón
+				</nombre>
+				<precio>
+					499.99
+				</precio>
+				<stock>
+					6
+>>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
@@ -491,6 +1362,7 @@
 					213
 				</codigo>
 				<nombre>
+<<<<<<< Updated upstream
 					Bajo
 				</nombre>
 				<precio>
@@ -498,6 +1370,15 @@
 				</precio>
 				<stock>
 					4500
+=======
+					Teclado
+				</nombre>
+				<precio>
+					329.99
+				</precio>
+				<stock>
+					9
+>>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
@@ -505,6 +1386,7 @@
 					214
 				</codigo>
 				<nombre>
+<<<<<<< Updated upstream
 					Trompeta
 				</nombre>
 				<precio>
@@ -512,6 +1394,29 @@
 				</precio>
 				<stock>
 					3600
+=======
+					Trombón
+				</nombre>
+				<precio>
+					459.99
+				</precio>
+				<stock>
+					4
+				</stock>
+			</articulo>
+			<articulo>
+				<codigo>
+					215
+				</codigo>
+				<nombre>
+					Trompa
+				</nombre>
+				<precio>
+					559.99
+				</precio>
+				<stock>
+					3
+>>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
@@ -519,6 +1424,7 @@
 					216
 				</codigo>
 				<nombre>
+<<<<<<< Updated upstream
 					Teclado
 				</nombre>
 				<precio>
@@ -526,10 +1432,20 @@
 				</precio>
 				<stock>
 					3500
+=======
+					Trompeta
+				</nombre>
+				<precio>
+					389.99
+				</precio>
+				<stock>
+					8
+>>>>>>> Stashed changes
 				</stock>
 			</articulo>
 			<articulo>
 				<codigo>
+<<<<<<< Updated upstream
 					218
 				</codigo>
 				<nombre>
@@ -615,6 +1531,9 @@
 			<articulo>
 				<codigo>
 					224
+=======
+					217
+>>>>>>> Stashed changes
 				</codigo>
 				<nombre>
 					Tuba
@@ -623,6 +1542,7 @@
 					699.99
 				</precio>
 				<stock>
+<<<<<<< Updated upstream
 					2600
 				</stock>
 			</articulo>
@@ -638,6 +1558,9 @@
 				</precio>
 				<stock>
 					1000000
+=======
+					2
+>>>>>>> Stashed changes
 				</stock>
 			</articulo>
 		</articulos>

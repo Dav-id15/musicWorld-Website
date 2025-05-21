@@ -102,4 +102,177 @@
 			Usuario
 		</rol>
 	</usuario>
+<<<<<<< Updated upstream
+=======
+	<usuario>
+		<nombre>
+			Elena
+		</nombre>
+		<apellidos>
+			Morales Diaz
+		</apellidos>
+		<email>
+			elenamorales@example.com
+		</email>
+		<contraseña>
+			$2y$10$I4dqanWvK/rmDnOcUsKuD.OW17SAD4r5Ij4JwQzAh2I1s44bYywbe
+		</contraseña>
+		<rol>
+			Usuario
+		</rol>
+	</usuario>
+	<usuario>
+		<nombre>
+			Jorge
+		</nombre>
+		<apellidos>
+			Castillo Ramos
+		</apellidos>
+		<email>
+			jorgecastillo@example.com
+		</email>
+		<contraseña>
+			$2y$10$I4dqanWvK/rmDnOcUsKuD.OW17SAD4r5Ij4JwQzAh2I1s44bYywbe
+		</contraseña>
+		<rol>
+			Usuario
+		</rol>
+	</usuario>
+	<usuario>
+		<nombre>
+			Lucia
+		</nombre>
+		<apellidos>
+			Navarro Paredes
+		</apellidos>
+		<email>
+			lucianavarro@example.com
+		</email>
+		<contraseña>
+			$2y$10$I4dqanWvK/rmDnOcUsKuD.OW17SAD4r5Ij4JwQzAh2I1s44bYywbe
+		</contraseña>
+		<rol>
+			Usuario
+		</rol>
+	</usuario>
+	<usuario>
+		<nombre>
+			Raul
+		</nombre>
+		<apellidos>
+			Cano Herrera
+		</apellidos>
+		<email>
+			raulcano@example.com
+		</email>
+		<contraseña>
+			$2y$10$I4dqanWvK/rmDnOcUsKuD.OW17SAD4r5Ij4JwQzAh2I1s44bYywbe
+		</contraseña>
+		<rol>
+			Usuario
+		</rol>
+	</usuario>
+	<usuario>
+		<nombre>
+			Isabel
+		</nombre>
+		<apellidos>
+			Serrano Gil
+		</apellidos>
+		<email>
+			isabelserrano@example.com
+		</email>
+		<contraseña>
+			$2y$10$I4dqanWvK/rmDnOcUsKuD.OW17SAD4r5Ij4JwQzAh2I1s44bYywbe
+		</contraseña>
+		<rol>
+			Usuario
+		</rol>
+	</usuario>
+	<usuario>
+		<nombre>
+			Miguel
+		</nombre>
+		<apellidos>
+			Vega Romero
+		</apellidos>
+		<email>
+			miguelvega@example.com
+		</email>
+		<contraseña>
+			$2y$10$I4dqanWvK/rmDnOcUsKuD.OW17SAD4r5Ij4JwQzAh2I1s44bYywbe
+		</contraseña>
+		<rol>
+			Usuario
+		</rol>
+	</usuario>
+	<usuario>
+		<nombre>
+			Sofia
+		</nombre>
+		<apellidos>
+			Delgado Molina
+		</apellidos>
+		<email>
+			sofiadelgado@example.com
+		</email>
+		<contraseña>
+			$2y$10$I4dqanWvK/rmDnOcUsKuD.OW17SAD4r5Ij4JwQzAh2I1s44bYywbe
+		</contraseña>
+		<rol>
+			Usuario
+		</rol>
+	</usuario>
+	<usuario>
+		<nombre>
+			Diego
+		</nombre>
+		<apellidos>
+			Ortega Peña
+		</apellidos>
+		<email>
+			diegoortega@example.com
+		</email>
+		<contraseña>
+			$2y$10$I4dqanWvK/rmDnOcUsKuD.OW17SAD4r5Ij4JwQzAh2I1s44bYywbe
+		</contraseña>
+		<rol>
+			Usuario
+		</rol>
+	</usuario>
+	<usuario>
+		<nombre>
+			Paula
+		</nombre>
+		<apellidos>
+			Ruiz Marin
+		</apellidos>
+		<email>
+			paularuiz@example.com
+		</email>
+		<contraseña>
+			$2y$10$I4dqanWvK/rmDnOcUsKuD.OW17SAD4r5Ij4JwQzAh2I1s44bYywbe
+		</contraseña>
+		<rol>
+			Usuario
+		</rol>
+	</usuario>
+	<usuario>
+		<nombre>
+			Hector
+		</nombre>
+		<apellidos>
+			Lorenzo Campos
+		</apellidos>
+		<email>
+			hectorlorenzo@example.com
+		</email>
+		<contraseña>
+			$2y$10$I4dqanWvK/rmDnOcUsKuD.OW17SAD4r5Ij4JwQzAh2I1s44bYywbe
+		</contraseña>
+		<rol>
+			Usuario
+		</rol>
+	</usuario>
+>>>>>>> Stashed changes
 </usuarios>
