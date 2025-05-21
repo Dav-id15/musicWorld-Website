@@ -9,19 +9,19 @@ if ($_SESSION["usuario"]["rol"] != "Administrador") {
 $archivo_xml = 'xml/usuarios.xml';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["email"], $_POST["accion"])) {
-    $email = $_POST["email"];
+    $email = trim($_POST["email"]);
     $accion = $_POST["accion"];
 
     if ($accion === "eliminar") {
-        if ($email === $_SESSION["usuario"]["email"]) {
+        if ($email === trim($_SESSION["usuario"]["email"])) {
             echo "<script type='text/javascript'>
                 alert('No puedes eliminar tu propio usuario.');
                 window.location.href = 'usuarios';
             </script>";
             exit;
-        } elseif ($email === "admin@lpb.com") {
+        } elseif ($email === "Director@correo.com") {
             echo "<script type='text/javascript'>
-                alert('No puedes eliminar el usuario administrador.');
+                alert('No puedes eliminar el usuario director.');
                 window.location.href = 'usuarios';
             </script>";
             exit;
@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["email"], $_POST["acci
             // Convertir a DOM para eliminar correctamente el nodo
             $dom = dom_import_simplexml($xml);
             foreach ($xml->usuario as $index => $usuario) {
-                if ((string) $usuario->email === $email) {
+                if ((string) trim($usuario->email) === $email) {
                     $domUsuario = dom_import_simplexml($usuario);
                     $domUsuario->parentNode->removeChild($domUsuario);
                     break;
@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["email"], $_POST["acci
         if (file_exists($archivo_xml)) {
             $xml = simplexml_load_file($archivo_xml);
             foreach ($xml->usuario as $usuario) {
-                if ((string)$usuario->email === $email) {
+                if ((string)trim($usuario->email) === $email) {
                     $usuarioEditar = [
                         'nombre' => (string)$usuario->nombre,
                         'apellidos' => (string)$usuario->apellidos,
@@ -73,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["email"], $_POST["acci
         if (file_exists($archivo_xml)) {
             $xml = simplexml_load_file($archivo_xml);
             foreach ($xml->usuario as $usuario) {
-                if ((string)$usuario->email === $email_original) {
+                if ((string)trim($usuario->email) === $email_original) {
                     $usuario->nombre = $nombre;
                     $usuario->apellidos = $apellidos;
                     $usuario->email = $email;
@@ -126,22 +126,22 @@ include 'header.php';
             <!-- Formulario de edición -->
             <form method="POST" action="usuarios" class="form-editar-usuario">
                 <input type="hidden" name="accion" value="actualizar">
-                <input type="hidden" name="email_original" value="<?= htmlspecialchars($usuarioEditar['email']) ?>">
+                <input type="hidden" name="email_original" value="<?= trim(htmlspecialchars($usuarioEditar['email'])) ?>">
 
                 <label>Nombre:</label>
-                <input type="text" name="nombre" value="<?= htmlspecialchars($usuarioEditar['nombre']) ?>" required>
+                <input type="text" name="nombre" value="<?= trim(htmlspecialchars($usuarioEditar['nombre'])) ?>" required>
 
                 <label>Apellidos:</label>
-                <input type="text" name="apellidos" value="<?= htmlspecialchars($usuarioEditar['apellidos']) ?>" required>
+                <input type="text" name="apellidos" value="<?= trim(htmlspecialchars($usuarioEditar['apellidos'])) ?>" required>
 
                 <label>Email:</label>
-                <input type="email" name="email" value="<?= htmlspecialchars($usuarioEditar['email']) ?>" required>
+                <input type="email" name="email" value="<?= trim(htmlspecialchars($usuarioEditar['email'])) ?>" required>
 
                 <label>Rol:</label>
                 <select name="rol" required>
-                    <option value="Administrador" <?= $usuarioEditar['rol'] == 'Administrador' ? 'selected' : '' ?>>Administrador</option>
-                    <option value="Árbitro" <?= $usuarioEditar['rol'] == 'Árbitro' ? 'selected' : '' ?>>Árbitro</option>
-                    <option value="Entrenador" <?= $usuarioEditar['rol'] == 'Entrenador' ? 'selected' : '' ?>>Entrenador</option>
+                    <option value="Administrador" <?= trim($usuarioEditar['rol']) == 'Administrador' ? 'selected' : '' ?>>Administrador</option>
+                    <option value="Árbitro" <?= trim($usuarioEditar['rol']) == 'Árbitro' ? 'selected' : '' ?>>Árbitro</option>
+                    <option value="Entrenador" <?= trim($usuarioEditar['rol']) == 'Entrenador' ? 'selected' : '' ?>>Entrenador</option>
                 </select>
                 
                 <button type="submit">Guardar cambios</button>
@@ -167,13 +167,13 @@ include 'header.php';
                         });
                         foreach ($usuarios as $usuario): ?>
                             <tr>
-                                <td><?= htmlspecialchars($usuario['nombre']) ?></td>
+                                <td><?= trim(htmlspecialchars($usuario['nombre'])) ?></td>
                                 <td><?= htmlspecialchars($usuario['apellidos']) ?></td>
-                                <td><?= htmlspecialchars($usuario['email']) ?></td>
-                                <td><?= htmlspecialchars($usuario['rol']) ?></td>
+                                <td><?= trim(htmlspecialchars($usuario['email'])) ?></td>
+                                <td><?= trim(htmlspecialchars($usuario['rol'])) ?></td>
                                 <td>
                                     <form method="POST" style="display: inline;" onsubmit="return true;">
-                                        <input type="hidden" name="email" value="<?= htmlspecialchars($usuario['email']) ?>">
+                                        <input type="hidden" name="email" value="<?= trim(htmlspecialchars($usuario['email'])) ?>">
                                         <input type="hidden" name="accion" value="editar">
                                         <button type="submit" style="border: none; background: none; padding: 0;">
                                             <img src="img/editar.png" alt="Editar" class="user-edit-btn" width="40">

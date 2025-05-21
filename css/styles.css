@@ -360,42 +360,47 @@ footer {
 
 /*FIN FOOTER*/
 
-/* INICIO DE EQUIPOS */
+/* INICIO DE TIENDA - CATÁLOGO DE ARTÍCULOS */
 
 .contenedor-equipos {
-	display: flex;
+    display: flex;
     flex-direction: column;
-	gap: 1.5em;
+    gap: 1.5em;
     color: white;
     padding: 1.25em;
 }
 
+.temporada-header h1{
+    color: white;
+    text-align: center;
+}
+
+.temporada-header h2{
+    color: white;
+    text-align: center;
+}
+
 .equipos {
     display: flex;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 2em;
-    align-items: center;
     justify-content: center;
-	color: #5f5f5f;
-	width: 70%;
+    width: 100%;
     margin: 0 auto;
 }
 
-.equipos p {
-	color: white;
-}
-
-.equipo {
-    border: 0.125em solid #5f5f5f;
+.equipo {      /*///////////////*/
+    border: 2px solid #5f5f5f;
     border-radius: 0.5em;
     background-color: #fffcefad;
     padding: 0.625em;
-	width: 15em;
+    width: 21%;
     text-align: center;
-    cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.1);
-    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .equipo:hover {
@@ -403,126 +408,46 @@ footer {
     box-shadow: 0 0.375em 0.75em rgba(0, 0, 0, 0.2);
 }
 
-.logo {
-    height: 6.25em;
+.logo { /*///////*/
+    width: 100%;
+    height: auto;
+    max-height: 20em;
+    object-fit: contain; /* Cambiado de cover a contain */
     margin-bottom: 0.625em;
-    object-fit: cover;
-    transition: transform 0.3s;
+    transition: transform 2s;
 }
 
 .logo:hover {
-    transform: rotate(360deg);
-}
-
-.enlace-equipo {
-    background-color: inherit;
-    border: none;
-    cursor: pointer;
-    font-size: inherit;
-    color: inherit;
-    font-family: inherit;
+    transform: scale(1.25) rotate(10deg);
 }
 
 .equipo strong {
     display: block;
-    margin-top: 1em;
-    font-size: 1.2em;
-	white-space: nowrap;
-}
-
-.detalles-equipo {
-    display: none;
-    border: 0.125em solid #5f5f5f;
-    border-radius: 0.5em;
-    background-color: #fffcefad;
-    padding: 2em;
-    box-shadow: 0 0.375em 0.75em rgba(0, 0, 0, 0.1);
-    margin-top: 2em;
-    transition: all 0.3s;
-    color: #5f5f5f;
-}
-
-.equipo-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2em;
-    margin-bottom: 2em;
-}
-
-.equipo-header h1 {
-    color: #424242;
-}
-
-.equipo-logo {
-    display: flex
-;
-    align-items: center;
-}
-
-.equipo-logo img {
-    width: 8em;
-    height: 8em;
-    object-fit: cover;
-    margin-right: 2em;
-}
-
-.equipo-info {
-    margin-right: 2em;
-}
-
-.equipo-info p {
-    font-size: 1.125em;
-    margin: 0.5em 0;
-}
-
-.equipo-info strong {
-    color: #424242;
-}
-
-.jugadores h2 {
-    font-size: 1.5em;
-    margin-bottom: 2em;
-    text-align: center;
-    color: #424242;
-}
-
-.jugadores-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5em;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.jugador {
-    text-align: center;
-    min-width: 10em;
-    color: #5f5f5f;
-}
-
-.jugador-foto {
-    width: 8em;
-    height: 8em;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 0.5em;
-}
-
-.jugador-info {
+    margin-top: 0.5em;
     font-size: 1.1em;
-}
-
-.jugador-info p {
-    margin: 0.2em 0;
-}
-
-.jugador-info strong {
     color: #424242;
+    white-space: nowrap;
 }
 
-/* FIN DE EQUIPOS */
+/* Responsive */
+@media (max-width: 1024px) {
+    .equipo {
+        width: 28%;
+    }
+}
+
+@media (max-width: 768px) {
+    .equipo {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .equipo {
+        width: 80%;
+    }
+}
+
 
 
 /* INICIO DE CALENDARIO */
@@ -561,45 +486,93 @@ footer {
 }
 
 .partido a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
     text-decoration: none;
     color: inherit;
 }
 
-.partido img {
-    width: 6em;
-    height: 6em;
-    object-fit: contain;
-    margin-right: 0.8em;
-}
-
+    
 .partido .calendario-equipo {
     flex: 1;
     text-align: center;
     font-size: 3em;
     font-weight: bold;
 }
+/* FIN DE PEDIDOS */
 
-.partido strong {
-    color: #424242;
+/* INICIO DE DETALLES PEDIDO */
+.pedido-resumen {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+.pedido-resumen:hover {
+    background-color: #eef;
+}
+.pedido-resumen a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.pedido-img {
+    max-height: 220px;
+    margin-top: 10px;
 }
 
-.detalles-partido {
-    width: 100%;
+/* Para detallePedido.php */
+main.detalle-pedido {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    color: #333;
+}
+main.detalle-pedido h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+}
+main.detalle-pedido p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+main.detalle-pedido strong {
+    color: #555;
+}
+main.detalle-pedido img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    width: 30%;;
+}
+main.detalle-pedido a {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+main.detalle-pedido a:hover {
+    background-color: #0056b3;
 }
 
-.partido-equipos {
-    font-size: 1em;
-}
-
-.calendario-equipos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 45%;
-}
-
-/* FIN DE CALENDARIO */
-
+/* FIN DE DETALLES PEDIDO  */
 
 /* INICIO DE CONTACTO */
 
@@ -819,12 +792,12 @@ footer {
     border: 0.125em solid #5f5f5f;
     border-radius: 0.5em;
     background-color: #fffcefad;
-    padding: 2em;
+    padding: 1em;
     box-shadow: 0 0.375em 0.75em rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
     color: #5f5f5f;
     margin: 2em auto;
-    max-width: 100em;
+    max-width: 1000em;
 }
 
 .usuarios-header {
@@ -835,11 +808,11 @@ footer {
 }
 
 .perfil {
-    width: 30%;
+    width: 70%;
 }
 
 .usuarios {
-    width: 37%;
+    width: 70%;
 }
 
 .perfil h1 {
@@ -857,6 +830,7 @@ footer {
     display: block;
     margin-bottom: 0.2em;
     font-weight: bold;
+    text-align: left;
 }
 
 .perfil input, .perfil select {
@@ -867,6 +841,7 @@ footer {
     border-radius: 0.5em;
     box-sizing: border-box;
     background-color: #eee;
+    text-align:justify;
 }
 
 .perfil input[type="submit"] {

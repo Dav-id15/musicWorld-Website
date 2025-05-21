@@ -2,35 +2,73 @@
 <raiz>
 		<pedidos>
 			<pedido>
+				<cod_pedido>
+					53
+				</cod_pedido>
 				<codigo>
 					202
 				</codigo>
 				<articulo>
-					Bajo
+					Maracas
 				</articulo>
 				<direccion>
 					Calle Director 100
 				</direccion>
 				<fecha>
-					2025-05-20
+					2025-05-21
 				</fecha>
 				<hora>
-					null
+					19:37:25
 				</hora>
 				<cantidad>
-					3
+					1
 				</cantidad>
 				<precio>
-					399.99
+					19.99
 				</precio>
 				<pagado>
-					1199.97
+					19.99
 				</pagado>
-				<usuario>
-					Director Director
-				</usuario>
+				<correo>
+					Director@correo.com
+				</correo>
 			</pedido>
 			<pedido>
+				<cod_pedido>
+					19
+				</cod_pedido>
+				<codigo>
+					202
+				</codigo>
+				<articulo>
+					Maracas
+				</articulo>
+				<direccion>
+					Calle Director 100
+				</direccion>
+				<fecha>
+					2025-05-21
+				</fecha>
+				<hora>
+					10:22:48
+				</hora>
+				<cantidad>
+					1
+				</cantidad>
+				<precio>
+					19.99
+				</precio>
+				<pagado>
+					19.99
+				</pagado>
+				<correo>
+					Director@correo.com
+				</correo>
+			</pedido>
+			<pedido>
+				<cod_pedido>
+					14
+				</cod_pedido>
 				<codigo>
 					201
 				</codigo>
@@ -41,54 +79,28 @@
 					Calle Director 100
 				</direccion>
 				<fecha>
-					2025-05-20
+					2025-05-21
 				</fecha>
 				<hora>
-					null
+					08:03:25
 				</hora>
 				<cantidad>
 					1
 				</cantidad>
 				<precio>
-					459.99
+					499.99
 				</precio>
 				<pagado>
-					459.99
+					499.99
 				</pagado>
-				<usuario>
-					Director Director
-				</usuario>
+				<correo>
+					Director@correo.com
+				</correo>
 			</pedido>
 			<pedido>
-				<codigo>
-					204
-				</codigo>
-				<articulo>
-					Piano
-				</articulo>
-				<direccion>
-					Calle Director 100
-				</direccion>
-				<fecha>
-					2025-05-20
-				</fecha>
-				<hora>
-					null
-				</hora>
-				<cantidad>
-					4
-				</cantidad>
-				<precio>
-					599.99
-				</precio>
-				<pagado>
-					2399.96
-				</pagado>
-				<usuario>
-					Director Director
-				</usuario>
-			</pedido>
-			<pedido>
+				<cod_pedido>
+					5
+				</cod_pedido>
 				<codigo>
 					205
 				</codigo>
@@ -108,45 +120,19 @@
 					3
 				</cantidad>
 				<precio>
-					249.99
-				</precio>
-				<pagado>
-					749.97
-				</pagado>
-				<usuario>
-					Luis Ramirez Torres
-				</usuario>
-			</pedido>
-			<pedido>
-				<codigo>
-					202
-				</codigo>
-				<articulo>
-					Bajo
-				</articulo>
-				<direccion>
-					Calle Luna 202
-				</direccion>
-				<fecha>
-					2024-03-17
-				</fecha>
-				<hora>
-					16:44:36
-				</hora>
-				<cantidad>
-					1
-				</cantidad>
-				<precio>
 					399.99
 				</precio>
 				<pagado>
-					399.99
+					1199.97
 				</pagado>
-				<usuario>
-					Luis Ramirez Torres
-				</usuario>
+				<correo>
+					luisramirez@example.com
+				</correo>
 			</pedido>
 			<pedido>
+				<cod_pedido>
+					8
+				</cod_pedido>
 				<codigo>
 					201
 				</codigo>
@@ -166,16 +152,19 @@
 					1
 				</cantidad>
 				<precio>
-					459.99
+					499.99
 				</precio>
 				<pagado>
-					459.99
+					499.99
 				</pagado>
-				<usuario>
-					Carlos Gomez Ruiz
-				</usuario>
+				<correo>
+					carlosgomez@example.com
+				</correo>
 			</pedido>
 			<pedido>
+				<cod_pedido>
+					3
+				</cod_pedido>
 				<codigo>
 					203
 				</codigo>
@@ -200,11 +189,14 @@
 				<pagado>
 					799.99
 				</pagado>
-				<usuario>
-					Carlos Gomez Ruiz
-				</usuario>
+				<correo>
+					carlosgomez@example.com
+				</correo>
 			</pedido>
 			<pedido>
+				<cod_pedido>
+					6
+				</cod_pedido>
 				<codigo>
 					203
 				</codigo>
@@ -229,11 +221,14 @@
 				<pagado>
 					1599.98
 				</pagado>
-				<usuario>
-					Juan Perez Garcia
-				</usuario>
+				<correo>
+					juanperez@example.com
+				</correo>
 			</pedido>
 			<pedido>
+				<cod_pedido>
+					1
+				</cod_pedido>
 				<codigo>
 					201
 				</codigo>
@@ -253,16 +248,19 @@
 					1
 				</cantidad>
 				<precio>
-					459.99
+					499.99
 				</precio>
 				<pagado>
-					459.99
+					499.99
 				</pagado>
-				<usuario>
-					Juan Perez Garcia
-				</usuario>
+				<correo>
+					juanperez@example.com
+				</correo>
 			</pedido>
 			<pedido>
+				<cod_pedido>
+					7
+				</cod_pedido>
 				<codigo>
 					204
 				</codigo>
@@ -282,21 +280,24 @@
 					1
 				</cantidad>
 				<precio>
-					599.99
+					649.99
 				</precio>
 				<pagado>
-					599.99
+					649.99
 				</pagado>
-				<usuario>
-					Maria Lopez Martinez
-				</usuario>
+				<correo>
+					marialopez@example.com
+				</correo>
 			</pedido>
 			<pedido>
+				<cod_pedido>
+					2
+				</cod_pedido>
 				<codigo>
 					202
 				</codigo>
 				<articulo>
-					Bajo
+					Maracas
 				</articulo>
 				<direccion>
 					Avenida Siempre Viva 456
@@ -311,16 +312,19 @@
 					2
 				</cantidad>
 				<precio>
-					399.99
+					19.99
 				</precio>
 				<pagado>
-					799.98
+					39.98
 				</pagado>
-				<usuario>
-					Maria Lopez Martinez
-				</usuario>
+				<correo>
+					marialopez@example.com
+				</correo>
 			</pedido>
 			<pedido>
+				<cod_pedido>
+					4
+				</cod_pedido>
 				<codigo>
 					204
 				</codigo>
@@ -340,16 +344,19 @@
 					1
 				</cantidad>
 				<precio>
-					599.99
+					649.99
 				</precio>
 				<pagado>
-					599.99
+					649.99
 				</pagado>
-				<usuario>
-					Ana Fernandez Sanchez
-				</usuario>
+				<correo>
+					anafernandez@example.com
+				</correo>
 			</pedido>
 			<pedido>
+				<cod_pedido>
+					9
+				</cod_pedido>
 				<codigo>
 					205
 				</codigo>
@@ -369,14 +376,14 @@
 					1
 				</cantidad>
 				<precio>
-					249.99
+					399.99
 				</precio>
 				<pagado>
-					249.99
+					399.99
 				</pagado>
-				<usuario>
-					Ana Fernandez Sanchez
-				</usuario>
+				<correo>
+					anafernandez@example.com
+				</correo>
 			</pedido>
 		</pedidos>
 
@@ -389,10 +396,10 @@
 					Guitarra
 				</nombre>
 				<precio>
-					459.99
+					499.99
 				</precio>
 				<stock>
-					14
+					1600
 				</stock>
 			</articulo>
 			<articulo>
@@ -400,13 +407,13 @@
 					202
 				</codigo>
 				<nombre>
-					Bajo
+					Maracas
 				</nombre>
 				<precio>
-					399.99
+					19.99
 				</precio>
 				<stock>
-					7
+					1999
 				</stock>
 			</articulo>
 			<articulo>
@@ -420,7 +427,7 @@
 					799.99
 				</precio>
 				<stock>
-					5
+					4000
 				</stock>
 			</articulo>
 			<articulo>
@@ -431,10 +438,10 @@
 					Piano
 				</nombre>
 				<precio>
-					599.99
+					649.99
 				</precio>
 				<stock>
-					4
+					3200
 				</stock>
 			</articulo>
 			<articulo>
@@ -445,10 +452,192 @@
 					Violin
 				</nombre>
 				<precio>
-					249.99
+					399.99
 				</precio>
 				<stock>
-					20
+					1600
+				</stock>
+			</articulo>
+			<articulo>
+				<codigo>
+					211
+				</codigo>
+				<nombre>
+					Clarinete
+				</nombre>
+				<precio>
+					99.99
+				</precio>
+				<stock>
+					2000
+				</stock>
+			</articulo>
+			<articulo>
+				<codigo>
+					212
+				</codigo>
+				<nombre>
+					Flauta
+				</nombre>
+				<precio>
+					129.99
+				</precio>
+				<stock>
+					1000
+				</stock>
+			</articulo>
+			<articulo>
+				<codigo>
+					213
+				</codigo>
+				<nombre>
+					Bajo
+				</nombre>
+				<precio>
+					499.99
+				</precio>
+				<stock>
+					4500
+				</stock>
+			</articulo>
+			<articulo>
+				<codigo>
+					214
+				</codigo>
+				<nombre>
+					Trompeta
+				</nombre>
+				<precio>
+					349.99
+				</precio>
+				<stock>
+					3600
+				</stock>
+			</articulo>
+			<articulo>
+				<codigo>
+					216
+				</codigo>
+				<nombre>
+					Teclado
+				</nombre>
+				<precio>
+					699.99
+				</precio>
+				<stock>
+					3500
+				</stock>
+			</articulo>
+			<articulo>
+				<codigo>
+					218
+				</codigo>
+				<nombre>
+					Castañuelas
+				</nombre>
+				<precio>
+					299.99
+				</precio>
+				<stock>
+					2100
+				</stock>
+			</articulo>
+			<articulo>
+				<codigo>
+					219
+				</codigo>
+				<nombre>
+					Conga
+				</nombre>
+				<precio>
+					129.99
+				</precio>
+				<stock>
+					1600
+				</stock>
+			</articulo>
+			<articulo>
+				<codigo>
+					220
+				</codigo>
+				<nombre>
+					Lira
+				</nombre>
+				<precio>
+					299.99
+				</precio>
+				<stock>
+					2200
+				</stock>
+			</articulo>
+			<articulo>
+				<codigo>
+					221
+				</codigo>
+				<nombre>
+					Saxofon
+				</nombre>
+				<precio>
+					349.99
+				</precio>
+				<stock>
+					1700
+				</stock>
+			</articulo>
+			<articulo>
+				<codigo>
+					222
+				</codigo>
+				<nombre>
+					Trombon
+				</nombre>
+				<precio>
+					279.99
+				</precio>
+				<stock>
+					2500
+				</stock>
+			</articulo>
+			<articulo>
+				<codigo>
+					223
+				</codigo>
+				<nombre>
+					trompa
+				</nombre>
+				<precio>
+					699.99
+				</precio>
+				<stock>
+					1600
+				</stock>
+			</articulo>
+			<articulo>
+				<codigo>
+					224
+				</codigo>
+				<nombre>
+					Tuba
+				</nombre>
+				<precio>
+					699.99
+				</precio>
+				<stock>
+					2600
+				</stock>
+			</articulo>
+			<articulo>
+				<codigo>
+					225
+				</codigo>
+				<nombre>
+					Donacion
+				</nombre>
+				<precio>
+					1.0
+				</precio>
+				<stock>
+					1000000
 				</stock>
 			</articulo>
 		</articulos>

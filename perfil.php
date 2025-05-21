@@ -8,21 +8,21 @@ if (!isset($_SESSION["usuario"]["email"])) {
 
 $archivo_xml = "xml/usuarios.xml";
 
-$email = $_SESSION["usuario"]["email"];
-$nombre = $_SESSION["usuario"]["nombre"];
-$apellidos = $_SESSION["usuario"]["apellidos"];
-$rol = $_SESSION["usuario"]["rol"];
+$email = trim($_SESSION["usuario"]["email"]);
+$nombre = trim($_SESSION["usuario"]["nombre"]);
+$apellidos = trim($_SESSION["usuario"]["apellidos"]);
+$rol = trim($_SESSION["usuario"]["rol"]);
 $userData = getUserData($email, $archivo_xml);
 
 function getUserData($username, $archivo_xml) {
     $xml = simplexml_load_file($archivo_xml);
 
     foreach ($xml->usuario as $email) {
-        if ($email->email == $username) {
+        if (trim($email->email) == $username) {
             return [
-                'nombre' => (string) $email->nombre,
-                'apellidos' => (string) $email->apellidos,
-                'email' => (string) $email->email
+                'nombre' => (string) trim($email->nombre),
+                'apellidos' => (string) trim($email->apellidos),
+                'email' => (string) trim($email->email)
             ];
         }
     }
@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $xml = simplexml_load_file($archivo_xml);
 
     foreach ($xml->usuario as $usuario) {
-        if ($usuario->email == $email) {
+        if (trim($usuario->email) == $email) {
             $usuario->nombre = $newNombre;
             $usuario->apellidos = $newApellidos;
             $usuario->email = $newEmail;
