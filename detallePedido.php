@@ -68,7 +68,7 @@ if (!file_exists($rutaImagenPedido)) {
 ?>
 
 <main class="detalle-pedido">
-    <h1>Detalle del pedido</h1>
+    <h1>Detalles del pedido</h1>
 
     <p><strong>Artículo:</strong> <?= htmlspecialchars($articulo) ?></p>
     <p><strong>Dirección:</strong> <?= htmlspecialchars($direccion) ?></p>

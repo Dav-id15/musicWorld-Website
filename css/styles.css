@@ -969,7 +969,7 @@ main.detalle-pedido a:hover {
 /* TABLA DE USUARIOS */
 
 .tabla-contenedor {
-    max-height: 20em;
+    max-height: 22em;
     max-width: 100%;
     overflow-x: auto;
     overflow-y: auto;

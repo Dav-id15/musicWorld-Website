@@ -89,8 +89,7 @@ include 'header.php';
                 <label for="rol">Selecciona el rol:</label>
                 <select class="select-rol" id="rol" name="rol" required>
                     <option value="Administrador">Administrador</option>
-                    <option value="Árbitro">Árbitro</option>
-                    <option value="Entrenador">Entrenador</option>
+                    <option value="Usuario">Usuario</option>
                 </select>
 
                 <button type="submit">Crear cuenta</button>
