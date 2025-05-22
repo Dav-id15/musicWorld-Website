@@ -20,21 +20,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Buscar el usuario en el XML
     foreach ($xml->usuario as $usuarioXML) {
-        if ((string) $usuarioXML->email === $email) {
+        if ((string) trim($usuarioXML->email) === $email) {
             // Verificar la contraseña
-            if (password_verify($password, (string) $usuarioXML->contraseña)) {
-                $_SESSION["usuario"]["nombre"] = (string) $usuarioXML->nombre;
-                $_SESSION["usuario"]["apellidos"] = (string) $usuarioXML->apellidos;
-                $_SESSION["usuario"]["email"] = (string) $usuarioXML->email;
-                $_SESSION["usuario"]["rol"] = (string) $usuarioXML->rol;
+            if (password_verify($password, (string) trim($usuarioXML->contraseña))) {
+                $_SESSION["usuario"]["nombre"] = (string) trim($usuarioXML->nombre);
+                $_SESSION["usuario"]["apellidos"] = (string) trim($usuarioXML->apellidos);
+                $_SESSION["usuario"]["email"] = (string) trim($usuarioXML->email);
+                $_SESSION["usuario"]["rol"] = (string) trim($usuarioXML->rol);
 
                 $redirectUrl = "./";
                 if ($_SESSION["usuario"]["rol"] === "Administrador") {
-                    $redirectUrl = "perfil";
-                } elseif ($_SESSION["usuario"]["rol"] === "Árbitro") {
-                    $redirectUrl = "calendario";
-                } elseif ($_SESSION["usuario"]["rol"] === "Entrenador") {
-                    $redirectUrl = "equipos";
+                    $redirectUrl = "usuarios.php";
+                } else {
+                    $redirectUrl = "pedidos";
                 }
 
                 echo json_encode(["status" => "success", "message" => "Inicio de sesión exitoso", "redirect" => $redirectUrl]);

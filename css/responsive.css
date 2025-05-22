@@ -5,8 +5,19 @@
         padding: 1em;
     }
 
-    #noticias {
+    #noticias,
+    .equipo-header,
+    .partido {
         flex-direction: column;
+    }
+
+    .noticia,
+    .clasificacion-contenido,
+    .partido .calendario-equipo,
+    .detalles-partido,
+    .calendario-equipos,
+    .contacto {
+        width: 100%;
     }
 
     .noticia {
@@ -17,21 +28,14 @@
         margin-left: 0;
     }
 
-    .clasificacion-contenido {
-        width: 100%;
-    }
-
-    .equipo-header {
-        flex-direction: column;
-    }
-
     .jugadores-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .temporada-selector {
-        text-align: left;
+    .temporada-selector,
+    #contacto {
+        text-align: center;
     }
 
     #temporadaSelect {
@@ -39,34 +43,23 @@
     }
 
     .partido {
-        flex-direction: column;
         align-items: flex-start;
         padding: 1em;
     }
 
-    .partido .calendario-equipo {
-        width: 100%;
-        text-align: left;
-    }
-
     .detalles-partido {
-        width: 100%;
         display: flex;
         justify-content: space-between;
         gap: 1em;
         margin-bottom: 1em;
     }
 
-    .partido-equipos {
-        text-align: center;
-    }
-
+    .partido-equipos,
     .partido a {
-        display: block;
         text-align: center;
-        font-size: 0.8em;
     }
 
+    .partido a,
     .partido p {
         font-size: 0.8em;
     }
@@ -74,10 +67,6 @@
     .partido img {
         width: 4em;
         height: 4em;
-    }
-
-    .calendario-equipos {
-        width: 100%;
     }
 
     .contacto {
@@ -88,24 +77,17 @@
         flex-direction: column;
     }
 
-    #contacto {
-        text-align: center;
-        margin-bottom: 1em;
-    }
-
     #logof img {
         padding-top: 1em;
     }
-
 }
 
 /* TABLETS */
 @media (min-width: 768px) and (max-width: 1024px) {
-
+    /* Puedes agregar aquí estilos específicos para tablets si lo necesitas */
 }
 
 /* MENÚ DROPDOWN MÓVIL/TABLET */
-
 @media (max-width: 1024px) {
 
     #logonav {
@@ -122,7 +104,7 @@
 
     #logonav img {
         width: 7em;
-        height: fit-content;
+        height: auto;
     }
 
     .header-pc {
@@ -132,7 +114,7 @@
     .header-movil {
         display: block;
         align-items: center;
-        background-color: #5786C3;
+        background-color: RGB(215, 238, 246);
         width: 100%;
         opacity: 0.8;
         height: 7em;
@@ -140,7 +122,7 @@
     }
 
     .header-movil.open {
-        height: 35em;
+        height: 24em;
     }
 
     #navegador {
@@ -151,15 +133,15 @@
 
     #navegador.show {
         visibility: visible;
-        justify-content: center;
         opacity: 1;
+        justify-content: center;
     }
 
     #navegador ul {
         flex-direction: column;
         padding: 0;
     }
-    
+
     #navegador ul li {
         text-align: center;
         width: 100%;
@@ -171,23 +153,20 @@
         font-weight: normal;
         margin-right: auto;
     }
-    
+
     .menu-icon {
         display: flex;
     }
 
-    .partido {
-        width: 90%;
-    }
-
-    .login, .perfil, .registro {
+    .partido,
+    .login,
+    .registro,
+    .perfil,
+    .usuarios {
         width: 70%;
     }
 
-    .perfil form {
-        width: auto;
-    }
-
+    .perfil form,
     .perfil section {
         width: 100%;
     }
@@ -195,32 +174,32 @@
     .temporada-select {
         margin-top: 1.5em;
     }
+
+    .usuarios {
+        width: 75%;
+    }
 }
 
 /* PANTALLAS 720p */
 @media (min-width: 1280px) and (max-width: 1366px) {
-
+    /* Puedes añadir ajustes específicos si lo necesitas */
 }
 
 /* PANTALLAS 1080p */
 @media (min-width: 1920px) and (max-width: 2560px) {
 
-    .temporada-jornada {
+    .temporada-jornada,
+    .dropdown {
         font-size: 1.2em;
-    }
-
-    #logonav {
-        margin-left: 1em;
     }
 
     .temporada-select {
         font-size: 1.5em;
     }
 
-    .dropdown {
-        font-size: 1.2em;
+    #logonav {
+        margin-left: 1em;
     }
-
 }
 
 /* PANTALLAS 4K */
@@ -230,13 +209,12 @@
         font-size: 2em;
     }
 
-    .contacto input, .contacto textarea {
+    .contacto input,
+    .contacto textarea {
         padding: 1.5em;
     }
 
     .temporada-jornada {
         font-size: 1.2em;
     }
-
 }
-

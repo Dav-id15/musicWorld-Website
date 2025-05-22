@@ -48,10 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
-    if (window.getComputedStyle(headerPC).display !== 'none' && document.body.getAttribute('login') === 'true') {
-        document.addEventListener('click', toggleDropdown);
-    }
 
     if (temporadaSelect) {
         temporadaSelect.addEventListener("change", function () {

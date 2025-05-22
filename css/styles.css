@@ -19,9 +19,11 @@ header {
 .header-pc {
     display: flex;
 	align-items: center;
-	background-color: #5786C3;
+	background-color: RGB(215, 238, 246);
 	width: 100%;
 	opacity: 0.8;
+    padding-bottom: 0.5%;
+    padding-top: 1.2%;
 }
 
 .header-movil {
@@ -40,11 +42,11 @@ header {
 
 #navegador {
 	flex-grow: 1; /* Hace que el navegador ocupe el espacio restante */
-	text-align: center;
+	text-align: left;
 }
 
 #navegador ul {
-	justify-content: center;
+	justify-content: flex-start;
 	list-style: none;
 	display: inline-flex;
 }
@@ -55,19 +57,21 @@ header {
 
 #navegador ul a {
 	text-decoration: none;
-	color: #F2EBC3;
-	font-size: 1.5em;
+	color: RGB(51, 117, 177);
+	font-size: 2em;
+    font-weight: bold;
 	position: relative;
 	transition: color 0.3s ease-in-out;
 	padding: 0.3em
 }
 
 #navegador ul a:hover {
-	color: #F46B20;
+	color: #26beff;
 }
 
 #navegador ul a.active {
-	background-color: #F46B20;
+    color: RGB(215, 238, 246);
+	background-color: RGB(51, 117, 177);
 	border-radius: 0.2em;
 	transition: 0.5s;
 }
@@ -86,7 +90,7 @@ header {
 }
 
 .login-button {
-    background-color: #F46B20;
+    background-color: #13427E;
     border-radius: 0.5em;
     padding: 0.5em 1em;
     box-shadow: none;
@@ -98,7 +102,7 @@ header {
 }
 
 .login-button:hover {
-    background-color: #df5d16;
+    background-color: #5786C3;
 }
 
 .login-button a {
@@ -115,9 +119,9 @@ header {
 }
 
 .welcome-msg {
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: bold;
-    color: #F2EBC3;
+    color: RGB(51, 117, 177);
     margin-right: 0.8em;
 }
 
@@ -129,7 +133,7 @@ header {
     align-items: center;
     cursor: pointer;
     padding: 0;
-    color: #F2EBC3
+    color: RGB(51, 117, 177)
 }
 
 .dropdown-content {
@@ -226,7 +230,7 @@ header {
 }
 
 .header-movil.expanded {
-    height: 40rem !important;
+    height: 42.5rem !important;
     transition: height 0.3s ease;
 }
 
@@ -252,41 +256,6 @@ main {
 	color: white;
 }
 
-
-#noticias {
-	display: flex;
-	justify-content: space-evenly;
-	flex-direction: row;
-}
-
-.noticia {
-	display: flex;
-	flex-direction: column;
-	width: 25%;
-	border-radius: 0.625em;
-	overflow: hidden;
-	background-color: white;
-	margin: 1.25em auto;
-}
-
-.noticia img {
-	height: auto;
-	width: 100%;
-}
-
-.noticia-link {
-	color: black;
-	text-decoration: none;
-}
-
-.noticia-link:hover {
-	text-decoration: underline;
-}
-
-.noticia-titulo {
-	padding: 0.938em; /* Espaciado interno del título de la noticia */
-}
-
 #contact p {
 	color: white;
 	font-weight: bold;
@@ -297,7 +266,7 @@ main {
 
 /*INICIO DE FOOTER*/
 footer {
-	background-color: #13427E;
+	background-color: RGB(51, 117, 177);
 	width: 100%;
 	color: #fffcef;
 }
@@ -328,7 +297,7 @@ footer {
 #logof img {
 	max-width: 100%;
 	height: auto; /* Mantiene la proporción del logo */
-	width: 9.375em; /* Ajusta el tamaño inicial del logo */
+	width: 14em; /* Ajusta el tamaño inicial del logo */
 }
 
 #con {
@@ -391,10 +360,9 @@ footer {
 
 /*FIN FOOTER*/
 
+/* INICIO DE TIENDA - CATÁLOGO DE ARTÍCULOS */
 
-/* INICIO DE CLASIFICACIÓN */
-
-.contenedor-clasificacion {
+.contenedor-equipos {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
@@ -402,178 +370,37 @@ footer {
     padding: 1.25em;
 }
 
-.contenedor-clasificacion h1 {
-    margin-left: 2em;
-}
-
-.contenedor-clasificacion p {
-    text-align: center;
-}
-
-.clasificacion-contenido {
-    overflow: auto;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.clasificacion-contenido table {
-    width: 100%;
-    border-collapse: separate;
-    margin-top: 1em;
-    border-radius: 1em;
-    overflow: hidden;
-}
-
-.clasificacion-contenido th, td {
-    padding: 1em;
-    text-align: center;
-}
-
-.clasificacion-contenido th {
-    background-color: #333;
+.temporada-header h1{
     color: white;
-}
-
-.clasificacion-contenido tr:nth-child(even) {
-    background-color: #f2f2f2;
-    color: #333;
-}
-
-.clasificacion-contenido tr:nth-child(odd) {
-    background-color: #e4e3e3;
-    color: #333;
-}
-
-.clasificacion-contenido tr:nth-child(even):hover {
-    background-color: #ddd;
-}
-
-.clasificacion-contenido tr:nth-child(odd):hover {
-    background-color: #cacaca;
-}
-
-.clasificacion-equipo {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    justify-content: center;
-}
-
-.enlace-clasificacion {
-    display: flex;
-    align-items: center;
-    background-color: inherit;
-    border: none;
-    cursor: pointer;
-    font-size: inherit;
-    color: inherit;
-    font-family: inherit;
-}
-
-.clasificacion-equipo a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-}
-
-.clasificacion-logo {
-    height: 3em;
-    object-fit: cover;
-    margin-right: 1em;
-}
-
-/* FIN DE CLASIFICACIÓN */
-
-
-/* INICIO DE EQUIPOS */
-
-.contenedor-equipos {
-	display: flex;
-    flex-direction: column;
-	gap: 1.5em;
-    color: white;
-    padding: 1.25em;
-}
-
-.temporada-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-}
-
-.temporada-header h1 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-.temporada-header label {
-    font-size: 1.125em;
-}
-
-.temporada-select {
-    display: flex;
-    align-items: center;
     text-align: center;
-    flex-grow: 1;
-    color: #F2EBC3;
-    font-size: 1.25em;
 }
 
-.temporada-select form {
-    margin-bottom: auto;
-}
-
-#temporadaSelect, #jornadaSelect  {
-    padding: 0.625em;
-    background-color: #fff;
-    border: 0.125em solid #333;
-    border-radius: 0.3125em;
-    margin-left: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#temporadaSelect {
-    font-size: 0.6em;
-}
-
-#jornadaSelect {
-    margin-bottom: 1.25em;
-    font-size: 1em;
-}
-
-#temporadaSelect:hover, #temporadaSelect:focus, #jornadaSelect:hover, #jornadaSelect:focus {
-    background-color: #f0f0f0;
+.temporada-header h2{
+    color: white;
+    text-align: center;
 }
 
 .equipos {
     display: flex;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 2em;
-    align-items: center;
     justify-content: center;
-	color: #5f5f5f;
-	width: 70%;
+    width: 100%;
     margin: 0 auto;
 }
 
-.equipos p {
-	color: white;
-}
-
-.equipo {
-    border: 0.125em solid #5f5f5f;
+.equipo {      /*///////////////*/
+    border: 2px solid #5f5f5f;
     border-radius: 0.5em;
     background-color: #fffcefad;
     padding: 0.625em;
-	width: 15em;
+    width: 21%;
     text-align: center;
-    cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.1);
-    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .equipo:hover {
@@ -581,126 +408,46 @@ footer {
     box-shadow: 0 0.375em 0.75em rgba(0, 0, 0, 0.2);
 }
 
-.logo {
-    height: 6.25em;
+.logo { /*///////*/
+    width: 100%;
+    height: auto;
+    max-height: 20em;
+    object-fit: contain; /* Cambiado de cover a contain */
     margin-bottom: 0.625em;
-    object-fit: cover;
-    transition: transform 0.3s;
+    transition: transform 2s;
 }
 
 .logo:hover {
-    transform: rotate(360deg);
-}
-
-.enlace-equipo {
-    background-color: inherit;
-    border: none;
-    cursor: pointer;
-    font-size: inherit;
-    color: inherit;
-    font-family: inherit;
+    transform: scale(1.25) rotate(10deg);
 }
 
 .equipo strong {
     display: block;
-    margin-top: 1em;
-    font-size: 1.2em;
-	white-space: nowrap;
-}
-
-.detalles-equipo {
-    display: none;
-    border: 0.125em solid #5f5f5f;
-    border-radius: 0.5em;
-    background-color: #fffcefad;
-    padding: 2em;
-    box-shadow: 0 0.375em 0.75em rgba(0, 0, 0, 0.1);
-    margin-top: 2em;
-    transition: all 0.3s;
-    color: #5f5f5f;
-}
-
-.equipo-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2em;
-    margin-bottom: 2em;
-}
-
-.equipo-header h1 {
-    color: #424242;
-}
-
-.equipo-logo {
-    display: flex
-;
-    align-items: center;
-}
-
-.equipo-logo img {
-    width: 8em;
-    height: 8em;
-    object-fit: cover;
-    margin-right: 2em;
-}
-
-.equipo-info {
-    margin-right: 2em;
-}
-
-.equipo-info p {
-    font-size: 1.125em;
-    margin: 0.5em 0;
-}
-
-.equipo-info strong {
-    color: #424242;
-}
-
-.jugadores h2 {
-    font-size: 1.5em;
-    margin-bottom: 2em;
-    text-align: center;
-    color: #424242;
-}
-
-.jugadores-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5em;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.jugador {
-    text-align: center;
-    min-width: 10em;
-    color: #5f5f5f;
-}
-
-.jugador-foto {
-    width: 8em;
-    height: 8em;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 0.5em;
-}
-
-.jugador-info {
+    margin-top: 0.5em;
     font-size: 1.1em;
-}
-
-.jugador-info p {
-    margin: 0.2em 0;
-}
-
-.jugador-info strong {
     color: #424242;
+    white-space: nowrap;
 }
 
-/* FIN DE EQUIPOS */
+/* Responsive */
+@media (max-width: 1024px) {
+    .equipo {
+        width: 28%;
+    }
+}
+
+@media (max-width: 768px) {
+    .equipo {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .equipo {
+        width: 80%;
+    }
+}
+
 
 
 /* INICIO DE CALENDARIO */
@@ -711,23 +458,31 @@ footer {
     gap: 1.5em;
     color: white;
     padding: 1.25em;
+    overflow-x: hidden; /* Previene desbordamiento lateral */
+    box-sizing: border-box;
 }
 
 .temporada-jornada {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5em;
 }
 
-.temporada-selector, .jornada-selector {
+.temporada-selector,
+.jornada-selector {
     margin-bottom: 1.1em;
     text-align: right;
 }
 
+/* PARTIDO */
 .partido {
     display: flex;
+    flex-wrap: wrap; /* Permite que elementos anchos se acomoden en varias líneas */
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 1em 2em;
     border: 0.125em solid #5f5f5f;
@@ -736,48 +491,163 @@ footer {
     box-shadow: 0 0.375em 0.75em rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
     color: #5f5f5f;
+    box-sizing: border-box;
+    overflow-x: auto; /* Scroll horizontal si es necesario */
 }
 
 .partido a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
     text-decoration: none;
     color: inherit;
-}
-
-.partido img {
-    width: 6em;
-    height: 6em;
-    object-fit: contain;
-    margin-right: 0.8em;
+    gap: 1em;
 }
 
 .partido .calendario-equipo {
-    flex: 1;
+    flex: 1 1 100%; /* Toma ancho completo en móvil */
     text-align: center;
-    font-size: 1em;
+    font-size: 2em;
     font-weight: bold;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
-.partido strong {
-    color: #424242;
+/* DETALLES PEDIDO */
+.pedido-resumen {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    overflow-x: auto; /* Permite scroll horizontal si hay contenido largo */
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
-.detalles-partido {
-    width: 20%;
+.pedido-resumen:hover {
+    background-color: #eef;
 }
 
-.partido-equipos {
-    font-size: 1.2em;
+.pedido-resumen a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
-.calendario-equipos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
+.pedido-img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin-top: 10px;
 }
 
-/* FIN DE CALENDARIO */
+/* ===================== */
+/* ===== RESPONSIVE ==== */
+/* ===================== */
 
+/* MÓVILES */
+@media (max-width: 767px) {
+
+    .partido {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1em;
+        gap: 1em;
+    }
+
+    .partido .calendario-equipo {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .temporada-jornada,
+    .temporada-selector,
+    .jornada-selector {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pedido-resumen {
+        font-size: 0.9em;
+        padding: 0.75em;
+    }
+}
+
+/* TABLETS */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .partido {
+        width: 90%;
+        padding: 1.5em;
+    }
+
+    .partido .calendario-equipo {
+        font-size: 2em;
+    }
+}
+
+/* PANTALLAS GRANDES */
+@media (min-width: 1440px) {
+    .partido {
+        width: 70%;
+    }
+}
+
+
+/* Para detallePedido.php */
+main.detalle-pedido {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    color: #333;
+}
+main.detalle-pedido h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+}
+main.detalle-pedido p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+main.detalle-pedido strong {
+    color: #555;
+}
+main.detalle-pedido img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    width: 30%;;
+}
+main.detalle-pedido a {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+main.detalle-pedido a:hover {
+    background-color: #0056b3;
+}
+
+/* FIN DE DETALLES PEDIDO  */
 
 /* INICIO DE CONTACTO */
 
@@ -939,7 +809,7 @@ footer {
     border-radius: 0.3em;
     box-shadow: 0 0 0.8em rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 25em;
+    max-width: 35em;
 	margin-bottom: 1.5em;
 }
 
@@ -988,63 +858,67 @@ footer {
 }
 
 /* FIN DE REGISTRO */
+/* PERFIL Y USUARIOS - BASE */
 
-/* INICIO DE PERFIL */
-
-.perfil, .perfil-admin {
+.perfil, .usuarios {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 3em;
+    flex-direction: column;
     border: 0.125em solid #5f5f5f;
     border-radius: 0.5em;
     background-color: #fffcefad;
-    padding: 2em;
+    padding: 1em;
     box-shadow: 0 0.375em 0.75em rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
     color: #5f5f5f;
     margin: 2em auto;
-    max-width: 100em;
+    width: 90%;
+    max-width: 900px;
+    box-sizing: border-box;
 }
 
-.perfil {
-    width: 30%;
+.usuarios-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
-.perfil-admin {
-    width: 70%;
-}
-
-.perfil h1, .perfil-admin h1 {
-    margin-bottom: 0;
+.perfil h1 {
+    margin-bottom: 0.5em;
     width: 100%;
 }
 
-.perfil form, .perfil-admin form {
+.perfil form {
     padding: 1.6em;
     border-radius: 0.3em;
     box-shadow: 0 0 0.8em rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.perfil label, .perfil-admin label {
+.perfil label {
     display: block;
     margin-bottom: 0.2em;
     font-weight: bold;
+    text-align: left;
 }
 
-.perfil input, .perfil select, .perfil-admin input, .perfil-admin select {
+.perfil input,
+.perfil select {
     width: 100%;
     padding: 0.8em;
     margin-bottom: 2em;
     border: 0.125em solid #ccc;
     border-radius: 0.5em;
-    box-sizing: border-box;
     background-color: #eee;
+    box-sizing: border-box;
+    text-align: justify;
 }
 
-.perfil input[type="submit"], .perfil-admin input[type="submit"] {
-    background:  #13427E;
+.perfil input[type="submit"] {
+    background: #13427E;
     color: #fff;
     border: none;
     padding: 0.8em 1.2em;
@@ -1055,14 +929,8 @@ footer {
     transition: background 0.2s ease-in-out;
 }
 
-.perfil input[type="submit"]:hover, .perfil-admin input[type="submit"]:hover {
-    background:#5786C3;
-}
-
-.perfil-usuarios, .perfil-modificar-datos {
-    flex: 1;
-    width: inherit;
-    margin-top: 0;
+.perfil input[type="submit"]:hover {
+    background: #5786C3;
 }
 
 .boton-centrado {
@@ -1072,53 +940,65 @@ footer {
 }
 
 .new-user-button {
-    background-color: #F46B20;
+    background-color: #13427E;
     border-radius: 0.5em;
     padding: 0.5em 1em;
-    box-shadow: none;
     border: none;
     text-align: center;
+    text-decoration: none;
     color: white;
     font-size: 1.2em;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .new-user-button:hover {
-    background-color: #df5d16;
+    background-color: #5786C3;
 }
 
-.new-user-button a {
+.volver-usuarios {
     text-decoration: none;
-    color: white;
+    color: #5f5f5f;
+    transition: color 0.2s ease-in-out;
+    font-weight: bold;
 }
+
+.volver-usuarios:hover {
+    color: #868686;
+}
+
+/* TABLA DE USUARIOS */
 
 .tabla-contenedor {
-    max-height: 20em;
+    max-height: 22em;
     max-width: 100%;
     overflow-x: auto;
     overflow-y: auto;
     border-radius: 0.5em;
+    box-sizing: border-box;
 }
 
 .usuarios-tabla {
     width: 100%;
+    min-width: 600px;
     border-collapse: collapse;
     border-spacing: 0;
     font-size: 1em;
     text-align: left;
 }
 
-.usuarios-tabla th, .usuarios-tabla td {
+.usuarios-tabla th,
+.usuarios-tabla td {
     padding: 1em;
     text-align: center;
 }
 
-.usuarios-tabla thead, .usuarios-tabla th {
+.usuarios-tabla thead,
+.usuarios-tabla th {
     background-color: #333;
     color: white;
     position: sticky;
     top: 0;
-    z-index: 1; 
+    z-index: 1;
 }
 
 .usuarios-tabla tr:nth-child(even) {
@@ -1131,15 +1011,104 @@ footer {
     color: #333;
 }
 
-.usuarios-tabla tr:nth-child(even):hover {
+.usuarios-tabla tr:hover {
     background-color: #ddd;
 }
 
-.usuarios-tabla tr:nth-child(odd):hover {
-    background-color: #cacaca;
+.user-edit-btn,
+.user-delete-btn {
+    cursor: pointer;
+    transition: filter 0.2s ease-in-out;
 }
 
-/* FIN DE PERFIL */
+.user-edit-btn:hover {
+    filter: brightness(0) saturate(100%) invert(50%) sepia(88%) saturate(746%) hue-rotate(198deg) brightness(101%) contrast(101%);
+}
+
+.user-delete-btn:hover {
+    filter: brightness(0) saturate(100%) invert(17%) sepia(100%) saturate(7450%) hue-rotate(0deg) brightness(100%) contrast(105%);
+}
+
+/* FORMULARIO EDITAR USUARIO */
+
+.form-editar-usuario {
+    padding: 2em;
+    box-shadow: 0 0.375em 0.75em rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-editar-usuario label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.form-editar-usuario input,
+.form-editar-usuario select {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 0.125em solid #ccc;
+    border-radius: 0.5em;
+    background-color: #eee;
+    box-sizing: border-box;
+}
+
+.form-editar-usuario button {
+    background: #13427E;
+    color: #fff;
+    border: none;
+    padding: 0.8em 1.2em;
+    font-size: 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s ease-in-out;
+}
+
+.form-editar-usuario button:hover {
+    background: #5786C3;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .perfil, .usuarios {
+        width: 95%;
+        padding: 1em;
+    }
+
+    .usuarios-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+    }
+
+    .perfil form,
+    .form-editar-usuario {
+        padding: 1em;
+    }
+
+    .usuarios-tabla {
+        font-size: 0.9em;
+    }
+
+    .usuarios-tabla th, .usuarios-tabla td {
+        padding: 0.5em;
+    }
+
+    .new-user-button {
+        font-size: 1em;
+        padding: 0.5em;
+    }
+
+    .boton-centrado {
+        justify-content: center;
+    }
+}
+
 
 
 /* MENSAJES DE SUCCESS Y ERROR */
