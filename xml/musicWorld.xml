@@ -1202,5 +1202,19 @@
 					2
 				</stock>
 			</articulo>
+			<articulo>
+				<codigo>
+					218
+				</codigo>
+				<nombre>
+					Doncacion
+				</nombre>
+				<precio>
+					1.0
+				</precio>
+				<stock>
+					100000
+				</stock>
+			</articulo>
 		</articulos>
 </raiz>
