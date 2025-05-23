@@ -21,7 +21,7 @@
                         <div class="partido">
                             <a>
                                 <xsl:attribute name="href">
-                                    <xsl:text>detallePedido.php?cod=</xsl:text>
+                                    <xsl:text>detallesPedido.php?cod=</xsl:text>
                                     <xsl:value-of select="cod_pedido"/>
                                 </xsl:attribute>
                                 

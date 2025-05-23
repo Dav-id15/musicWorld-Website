@@ -1,15 +1,9 @@
-<?xml version='1.0'?>
+<?xml version="1.0"?>
 <usuarios>
 	<usuario>
-		<nombre>
-			nombre1
-		</nombre>
-		<apellidos>
-			Director
-		</apellidos>
-		<email>
-			Director@correo.com
-		</email>
+		<nombre>David</nombre>
+		<apellidos>Aguirre</apellidos>
+		<email>Director@correo.com</email>
 		<contraseña>
 			$2y$10$I4dqanWvK/rmDnOcUsKuD.OW17SAD4r5Ij4JwQzAh2I1s44bYywbe
 		</contraseña>
@@ -226,7 +220,7 @@
 			Diego
 		</nombre>
 		<apellidos>
-			Ortega Peña
+			Ortega Pe&#xF1;a
 		</apellidos>
 		<email>
 			diegoortega@example.com
